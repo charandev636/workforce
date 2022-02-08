@@ -1,0 +1,69 @@
+.login-page{
+  .vendor-logo{
+
+    .img-sec {
+      text-align: center;
+      margin-top: 1.3rem;
+    }
+    .logo{
+      height: 8rem;
+    }
+  }
+
+  .remember-checkbox{
+    padding-left: 10px;
+  }
+  .txtfont{
+    font-size: 16px;
+  }
+
+  .vendor-name{
+    font-size: 20px;
+    color: #C6AF67;
+    font-weight: 700;
+    text-align: center;
+  }
+  .sub-text{
+    color: #8a8787;
+  }
+  .click-here{
+    color: #C6AF67;
+  }
+
+  .login-form{
+    text-align: center;
+  }
+
+  ion-input{
+    border: 1px solid black;
+    border-radius: 22px;
+    height: 50px;
+    margin-top: 1rem;
+   --padding-start: 50px;
+   font-size: 25px;
+  }
+
+  .user-icon{
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  padding-left: 10px;
+  bottom: 0;
+  font-size: 28px;
+  min-width: 0 !important;
+  text-align: left !important;
+  color: #000000;
+
+  }
+  .paswd-icon{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 12px;
+    font-size: 28px;
+    min-width: 0 !important;
+    text-align: left !important;
+    color: #000000;
+  }
+}

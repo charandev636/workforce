@@ -1,0 +1,7 @@
+{
+  "name": "workforce",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

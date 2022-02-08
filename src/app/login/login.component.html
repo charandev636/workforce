@@ -1,0 +1,70 @@
+<ion-content class="login-page">
+    <ion-header class="ion-no-border">
+      <ion-toolbar class="my-toolbar">
+        <!-- <ion-buttons slot="start" (click)="returnDasbord()">
+          <img src="../../assets/svg/back.svg" />
+        </ion-buttons> -->
+        <ion-title class="main-heading">Masqati Food Limited</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-grid class="">
+        <ion-row class="vendor-logo ">
+          <ion-col class="img-sec">
+          <img src="../../assets/images/logo.png" class="logo" />
+          </ion-col>
+        </ion-row>
+        <ion-row >
+          <ion-col class="vendor-name">
+          <ion-text>Masqati Workforce <br/> Vendor</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="login-form">
+            <form [formGroup]="loginForm" (ngSubmit)="formSubmit()">
+              <div class="login-form">
+                <div class="login-items">
+                  <ion-item lines="none">
+                      <ion-icon class="user-icon" name="person" slot="start"></ion-icon>
+                    <ion-input class="txtfont" formControlName="username" placeholder="User Name" [(ngModel)]="loginModel.username" type="text" required></ion-input>
+
+                    <!-- <div *ngIf="submitted && f.email.errors" class="error-message">
+                      <div *ngIf="f.email.errors.required">{{validationMsg.email}}</div>
+                      <div *ngIf="f.email.errors.email">{{validationMsg.validEmail}}</div>
+                    </div> -->
+                  </ion-item>
+                  <ion-item lines="none">
+                    <ion-icon name="lock-closed" class="paswd-icon"></ion-icon>
+                    <ion-input class="txtfont" formControlName="password" placeholder="Password" [(ngModel)]="loginModel.password" type="password"></ion-input>
+
+                    <!-- <div><img  class="eye-imgs" src="assets/svg/eye.svg" (click)="showPwd()"></div> -->
+                    <!-- <div *ngIf="submitted && f.password.errors" class="error-message">
+                      <div *ngIf="f.password.errors.required">{{validationMsg.password}}</div>
+                    </div> -->
+                  </ion-item>
+                  <ion-item lines="none" class="remember-checkbox">
+                    <ion-checkbox></ion-checkbox> &nbsp;
+                    <ion-text>Remember Me</ion-text>
+                  </ion-item>
+                  <ion-button  type="submit" (click)="navigateToHome()">Log In
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" ></span>
+                  </ion-button>
+
+                  <div class="ion-text-center">
+                    <ion-text color="primary" (click)="navigateToRegister()"><span class="sub-text">Don’t have an account? </span>
+                      <span class="click-here">Click Here </span></ion-text>
+                  </div>
+                  <div class="ion-text-center">
+                    <ion-text color="primary" ><span class="sub-text">2019 <span>&#169;</span>
+                       NEEMII Technology Private Limited </span>
+                    </ion-text>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+</ion-content>

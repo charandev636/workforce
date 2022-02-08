@@ -1,0 +1,41 @@
+ .slides-introduction {
+        ion-slides {
+        --bullet-background:var(--ion-color-darkblue);
+        --bullet-background-active: var(--ion-color-darkblue);
+        background-color: #1aa062c2;
+        color: white;
+        }
+        .intro-img1 {
+        margin-top: 60px;
+        width: 100%;
+        }
+        .intro-img2 {
+        margin-top: 45px;
+        width: 100%;
+        }
+        .intro-img3 {
+        margin-top: 15px;
+        width: 100%;
+        }
+        ion-slide {
+        height: 90vh;
+        display: block;
+        p{
+        margin-top: 50px;
+        padding: 0 30px;
+        font-size: 14px;
+        }
+        }
+        .skip-button {
+        float: left;
+        color: var(--ion-color-darkblue);
+        text-transform: capitalize;
+        font-size: 1rem;
+        }
+        .next-button{
+        float: right;
+        color: var(--ion-color-darkblue);
+        text-transform: capitalize;
+        font-size: 1rem;
+        }
+        }
