@@ -20,11 +20,7 @@
         ion-slide {
         height: 90vh;
         display: block;
-        p{
-        margin-top: 50px;
-        padding: 0 30px;
-        font-size: 14px;
-        }
+
         }
         .skip-button {
         float: left;
@@ -38,15 +34,43 @@
         text-transform: capitalize;
         font-size: 1rem;
         }
+      .slide-text{
+        position: absolute;
+        bottom: 30px;
+        padding: 0 30px;
+        font-size: 14px;
+
+        .slide-header{
+          font-size: 26px;
+
         }
+        .slide-subheader{
+          font-size: 28px;
+          font-weight: 700;
+          margin: 0;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+
+
+
+      }
         .backImg1{
               background-image: url("~src/assets/svg/1.svg");
+              background-repeat: no-repeat;
+              background-size: cover !important;
         }
 
         .backImg2{
               background-image: url("~src/assets/svg/2.svg");
+              background-repeat: no-repeat;
+              background-size: cover !important;
         }
 
         .backImg3{
               background-image: url("~src/assets/svg/3.svg");
+              background-repeat: no-repeat;
+              background-size: cover !important;
         }
