@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { IntroSlidesComponent } from './intro-slides/intro-slides.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {
@@ -10,11 +11,15 @@ const routes: Routes = [
     redirectTo: 'Intro-sliders',
     pathMatch: 'full'
   },
-   {
+  {
     path: 'Login',
     component:LoginComponent
   },
-    {
+  {
+    path: 'Signup',
+    component:SignupComponent
+  },
+  {
     path: 'Intro-sliders',
     component:IntroSlidesComponent
   },

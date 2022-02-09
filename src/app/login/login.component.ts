@@ -35,6 +35,8 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['home']);
   }
 
-  navigateToRegister(){}
-
+  navigateToRegister(){};
+  navigateToSignup(){
+    this.router.navigate(['Signup']);
+  };
 }

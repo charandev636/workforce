@@ -1,14 +1,19 @@
 <ion-content class="login-page">
-    <ion-header class="ion-no-border">
+  <!--  <ion-header class="ion-no-border">
       <ion-toolbar class="my-toolbar">
-        <!-- <ion-buttons slot="start" (click)="returnDasbord()">
+         <ion-buttons slot="start" (click)="returnDasbord()">
           <img src="../../assets/svg/back.svg" />
-        </ion-buttons> -->
+        </ion-buttons>
         <ion-title class="main-heading">Masqati Food Limited</ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header>-->
     <ion-content>
       <ion-grid class="">
+        <ion-grid class="login-section ">
+          <ion-row>
+            <ion-col><div class="ion-text-end version-text">V.2.0.2</div></ion-col>
+          </ion-row>
+          </ion-grid>
         <ion-row class="vendor-logo ">
           <ion-col class="img-sec">
           <img src="../../assets/images/logo.png" class="logo" />
@@ -16,11 +21,12 @@
         </ion-row>
         <ion-row >
           <ion-col class="vendor-name">
-          <ion-text>Masqati Workforce <br/> Vendor</ion-text>
+          <ion-text>Masqati Food Limited - <br/> Merchant</ion-text>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col class="login-form">
+            <ion-text class="signin-text">Sign In</ion-text>
             <form [formGroup]="loginForm" (ngSubmit)="formSubmit()">
               <div class="login-form">
                 <div class="login-items">
@@ -42,21 +48,36 @@
                       <div *ngIf="f.password.errors.required">{{validationMsg.password}}</div>
                     </div> -->
                   </ion-item>
-                  <ion-item lines="none" class="remember-checkbox">
-                    <ion-checkbox></ion-checkbox> &nbsp;
-                    <ion-text>Remember Me</ion-text>
-                  </ion-item>
-                  <ion-button  type="submit" (click)="navigateToHome()">Log In
+                  <ion-row lines="none" class="note-text">
+                    <ion-col>
+                      <div>Note: Only Register merchants can login </div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row lines="none" class="change-pwd-text ">
+                    <ion-col>
+                    <div class="text-center">Request for password change?</div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-button class="login-btn" expand="block" type="submit" (click)="navigateToHome()">Log In
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" ></span>
                   </ion-button>
+                  <ion-row>
+                    <ion-col></ion-col>
+                    <ion-col><hr class="hr"></ion-col>
+                    <ion-col></ion-col>
+                  </ion-row>
+                  <ion-row lines="none" class="masqati-merc">
+                    <ion-col>
+                      <div >Do you want to become a masqati merchant?</div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-button class="signup-btn" fill="outline"  type="submit" (click)="navigateToSignup()">Sign Up Now
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  </ion-button>
 
-                  <div class="ion-text-center">
-                    <ion-text color="primary" (click)="navigateToRegister()"><span class="sub-text">Don’t have an account? </span>
-                      <span class="click-here">Click Here </span></ion-text>
-                  </div>
-                  <div class="ion-text-center">
-                    <ion-text color="primary" ><span class="sub-text">2019 <span>&#169;</span>
-                       NEEMII Technology Private Limited </span>
+                  <div class="ion-text-center company-text">
+                    <ion-text color="primary" ><span class="sub-text">2022 made with love <span class="love-symbol">&#10084;</span>
+                      <br/> (Masqati Food Limited)</span>
                     </ion-text>
                   </div>
                 </div>

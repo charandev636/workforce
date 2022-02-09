@@ -2,29 +2,53 @@
   .vendor-logo{
 
     .img-sec {
-      text-align: center;
-      margin-top: 1.3rem;
+      text-align: center
     }
     .logo{
-      height: 8rem;
+      height: 11rem;
     }
   }
+  .login-section{
+    margin-top: 10%;
+  }
 
-  .remember-checkbox{
-    padding-left: 10px;
+  .version-text{
+    color: #9f9b9b;
+  }
+  .note-text{
+    color: #9f9b9b;
+    text-align: center;
+  }
+
+  .change-pwd-text{
+    text-align: center;
+    color: #ad3642;
+    margin-bottom: 1rem;
+  }
+  .masqati-merc{
+    text-align: center;
+    color: #4836ad;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .text-center{
+    text-align: center;
   }
   .txtfont{
     font-size: 16px;
   }
-
+  .signin-text{
+    font-size: 1.6rem;
+  }
   .vendor-name{
-    font-size: 20px;
-    color: #C6AF67;
-    font-weight: 700;
+    font-size: 24px;
+    color: #2d3975;
+    font-weight: 600;
     text-align: center;
   }
   .sub-text{
-    color: #8a8787;
+    color: #000000;
   }
   .click-here{
     color: #C6AF67;
@@ -32,6 +56,25 @@
 
   .login-form{
     text-align: center;
+  }
+
+  .login-btn{
+    height: 50px;
+    color:white;
+    --background:#c6af67 ;
+    --border-radius: 25px;
+
+  }
+
+  .signup-btn{
+    height: 50px;
+    color:#6025ce;
+    font-weight: 600;
+    --background:#f5f6fa ;
+
+    --border-radius: 25px ;
+    padding: 0 30px;
+
   }
 
   ion-input{
@@ -65,5 +108,13 @@
     min-width: 0 !important;
     text-align: left !important;
     color: #000000;
+  }
+
+  .love-symbol{
+    color: red;
+  }
+
+  .company-text{
+    font-size: 12px;
   }
 }
