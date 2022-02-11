@@ -56,18 +56,28 @@
         font-size: 1.2rem;
         font-weight: 700;
         color: dimgray;
+
     }
     .product-cards{
-    height: 90px;
-    text-align: center;
-    margin: 0 !important;
-    padding-top: 5px;
+      height: 70px;
+      text-align: center;
+      margin: 0 !important;
+      padding-top: 5px;
+      background: #c6af67;
+      border-radius: 10px;
 
     .logo{
-      width: 50px;
-      height: 50px;
+      width: 55px;
+      height: 56px;
+      text-align: center;
 
     }
+    }
+    .prod-name{
+      text-align: center;
+      color: dimgray;
+      padding-top: 6px;
+      font-size: 1.1rem;
     }
   }
   .sub-headers{

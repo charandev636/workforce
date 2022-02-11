@@ -36,8 +36,8 @@
         <ion-col size="4" *ngFor="let prod of productList">
           <ion-card class="product-cards">
             <img src={{prod.img}} class="logo" />
-            <div>{{prod.name}}</div>
           </ion-card>
+          <div class="prod-name">{{prod.name}}</div>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -50,8 +50,8 @@
         <ion-col size="4" *ngFor="let prod of otherList">
           <ion-card class="product-cards">
             <img src={{prod.img}} class="logo" />
-            <div>{{prod.name}}</div>
           </ion-card>
+          <div class="prod-name">{{prod.name}}</div>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -64,8 +64,8 @@
         <ion-col size="4">
           <ion-card class="product-cards">
             <img src="../../assets/images/dashboard-icons/chat.png" class="logo" />
-            <div>Chat With Admin</div>
           </ion-card>
+          <div class="prod-name">Chat With Admin</div>
         </ion-col>
       </ion-row>
     </ion-grid>
