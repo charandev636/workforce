@@ -1,24 +1,79 @@
-<ion-content class="login-page">
-  <ion-header class="ion-no-border">
-    <ion-toolbar class="my-toolbar">
-      <ion-buttons slot="start">
-        <ion-menu-button>
-            <img class="img1-menu" src="assets/svg/back.svg">
-        </ion-menu-button>
-    </ion-buttons>
-      <ion-title class="main-heading">Masqati Food Limited</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
+<ion-content class="dashboard-page">
+<ion-grid class="dashboard-header">
+  <ion-row class="header">
+    <ion-col size="2">
+      <ion-icon name="menu" class="side-menu"></ion-icon>
+    </ion-col>
+    <ion-col size="8" class="dash-logo">
+        <img src="../../assets/images/logo.png" class="logo" />
+    </ion-col>
+    <ion-col size="2">
+      <ion-icon name="notifications" class="notification-icon"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <div class="white-text">
+    <ion-text>Welcome, Masqati</ion-text>
+  </div>
+  <div class="white-text">
+    <ion-text>Last order: 23/2/2022 - 3 days ago </ion-text>
+  </div>
+  <ion-grid class="status-card">
+    <ion-card class="card-section">
+      <ion-card-content class="card-content">
+      </ion-card-content>
+    </ion-card>
+
+  </ion-grid>
+  <!--- activities section-->
+  <ion-grid class="card-body">
+    <div class="activities">Activities</div>
     <ion-grid>
       <ion-row>
-        <ion-col class="text-center">
-          <ion-text style="color:teal;">Lunching soon Masqati Food Limited App </ion-text>
+        <ion-col size="4" *ngFor="let prod of productList">
+          <ion-card class="product-cards">
+            <img src={{prod.img}} class="logo" />
+            <div>{{prod.name}}</div>
+          </ion-card>
         </ion-col>
       </ion-row>
     </ion-grid>
+  </ion-grid>
+  <!--others section-->
+  <ion-grid class="card-body">
+    <div class="activities">Others</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" *ngFor="let prod of otherList">
+          <ion-card class="product-cards">
+            <img src={{prod.img}} class="logo" />
+            <div>{{prod.name}}</div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-grid>
+  <!--communication-->
+  <ion-grid class="card-body">
+    <div class="sub-headers">Communication</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-card class="product-cards">
+            <img src="../../assets/images/dashboard-icons/chat.png" class="logo" />
+            <div>Chat With Admin</div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-grid>
+</ion-grid>
 
-  </ion-content>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button class="fab-btn">
+      <ion-icon class="add-icon" name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 
 </ion-content>
 
