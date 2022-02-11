@@ -1,0 +1,87 @@
+.dashboard-header{
+  background-color: #c6af67;
+  height: 30%;
+
+  .header{
+    margin-top: 3%;
+    height: 60%;
+
+    .dash-logo{
+      text-align: center;
+    }
+    .logo{
+      height: 80%;
+      width: 65%;
+
+    }
+    .notification-icon{
+      color: white !important;
+      font-size: 2rem;
+    }
+
+    .side-menu{
+      color: white;
+      font-size: 2rem;
+    }
+
+  }
+
+  .white-text{
+    color: white;
+    height: 10%;
+    padding-left: 2rem;
+  }
+
+
+  .status-card{
+    width: 100%;
+
+    .card-section{
+      border-radius: 5px;
+
+    }
+    .card-content{
+      margin: 10px;
+      background: #d8d8d8;
+      border-radius: 5px;
+      height: 80px;
+    }
+  }
+
+
+
+}
+  .card-body{
+    .activities{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: dimgray;
+    }
+    .product-cards{
+    height: 90px;
+    text-align: center;
+    margin: 0 !important;
+    padding-top: 5px;
+
+    .logo{
+      width: 50px;
+      height: 50px;
+
+    }
+    }
+  }
+  .sub-headers{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: dimgray;
+  }
+
+  .fab-btn{
+   --background:#ffff;
+
+   --color:#6025ce
+  }
+
+  .add-icon{
+    font-size: 40px;
+  }
