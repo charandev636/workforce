@@ -9,22 +9,54 @@
               <img src="../../assets/images/logo.png">
             </ion-avatar>
             <ion-label>
-              <h2>Guntuka Suman</h2>
-              <p>9701891708</p>
+              <h2>Masqati</h2>
+              <p>Masqati@gmail.com</p>
             </ion-label>
             <!-- <img src="./assets/svg/edit-icon.svg" (click)="navigateToProfile()" menuClose> -->
         </ion-item>
           </div>
-          <ion-list lines="full" mode="md">
-            <ion-menu-toggle auto-hide="true" *ngFor="let page of menuOptions;let i = index;">
+          <hr class="hr">
+          <ion-label class="activities">Activity</ion-label>
+          <ion-list lines="none" mode="md">
+            <ion-menu-toggle auto-hide="true" *ngFor="let page of productList;let i = index;">
               <ion-item (click)="navigateTo(page.url)"  routerDirection="forward" detail='false' mode="md">
-                  <!-- <img [src]="page.imgs" class="pl-2" slot="start"/> -->
-                    <h4 class="mb-0" > {{page.title}}</h4>
+                  <img [src]="page.img" class="imgSize"  slot="start"/>
+                    <ion-label class="mb-0" > {{page.name}}</ion-label>
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
+
+          <hr class="hr">
+          <ion-label class="activities">Others</ion-label>
+          <ion-list lines="none" mode="md">
+            <ion-menu-toggle auto-hide="true" *ngFor="let page of otherList;let i = index;">
+              <ion-item (click)="navigateTo(page.url)"  routerDirection="forward" detail='false' mode="md">
+                  <img [src]="page.img" class="imgSize" slot="start"/>
+                    <ion-label class="mb-0" > {{page.name}}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+
+          <hr class="hr">
+          <ion-list lines="none" mode="md">
+            <ion-menu-toggle auto-hide="true" *ngFor="let page of extraList;let i = index;">
+              <ion-item (click)="navigateTo(page.url)"  routerDirection="forward" detail='false' mode="md">
+                  <img [src]="page.img" class="imgSize" slot="start"/>
+                    <ion-label class="mb-0" > {{page.name}}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+
+      </div>
+      <div class="ion-text-center company-text">
+                <ion-text>V 2.0.1</ion-text><br><br>
+
+        <ion-text color="primary" ><span class="sub-text">2022 made with love <span class="love-symbol">&#10084;</span>
+          <br/> (Masqati Food Limited)</span>
+        </ion-text>
       </div>
     </ion-content>
   </ion-menu>
+ 
   <ion-router-outlet id="content1" main animated="false"></ion-router-outlet>
 </ion-app>

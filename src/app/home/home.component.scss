@@ -19,11 +19,16 @@
       font-size: 2rem;
     }
 
-    .side-menu{
-      color: white;
-      font-size: 2rem;
-    }
+   
+    
+  }
 
+  .side-menu{
+    height: 40px;
+    width: 40px;
+    margin-top: -104px;
+    color: white;
+    font-size: 2rem;
   }
 
   .white-text{
@@ -53,14 +58,14 @@
 }
   .card-body{
     .activities{
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: dimgray;
-
+        font-size: 1.1rem;
+        //font-weight: 700;
+        color: black;
+        padding-left: 8px;
     }
     .product-cards{
-      height: 70px;
-      width: 77%;
+      height: 56px;
+      width: 56%;
       text-align: center;
       margin: 0 !important;
       padding-top: 5px;
@@ -68,28 +73,30 @@
       border-radius: 15px;
 
     .logo{
-      width: 55px;
-      height: 56px;
+      width: 36px;
+      height: 36px;
       text-align: center;
+      margin-top: 6px;
 
     }
     }
     .prod-name{
       //text-align: center;
       color: #b3b9c0;
-      padding-top: 6px;
-      font-size: 1.1rem;
+      padding-top: 12px;
+      font-size: 14px;
+      
     }
   }
   .sub-headers{
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: dimgray;
+    font-size: 1.1rem;
+        //font-weight: 700;
+        color: black;
+        padding-left: 8px;
   }
 
   .fab-btn{
    --background:#ffff;
-
    --color:#6025ce
   }
 
