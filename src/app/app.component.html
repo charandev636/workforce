@@ -1,3 +1,30 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu (ionDidOpen)=menutoggle() contentId="content1" side="start" menuId="mainMenu" type="overlay" class="mobileView">
+      <ion-content>
+        <div class="side-menu-app-drag">
+          <div class="menu-item-img">
+              
+          <ion-item lines="none">
+            <ion-avatar slot="start">
+              <img src="../../assets/images/logo.png">
+            </ion-avatar>
+            <ion-label>
+              <h2>Guntuka Suman</h2>
+              <p>9701891708</p>
+            </ion-label>
+            <!-- <img src="./assets/svg/edit-icon.svg" (click)="navigateToProfile()" menuClose> -->
+        </ion-item>
+          </div>
+          <ion-list lines="full" mode="md">
+            <ion-menu-toggle auto-hide="true" *ngFor="let page of menuOptions;let i = index;">
+              <ion-item (click)="navigateTo(page.url)"  routerDirection="forward" detail='false' mode="md">
+                  <!-- <img [src]="page.imgs" class="pl-2" slot="start"/> -->
+                    <h4 class="mb-0" > {{page.title}}</h4>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1" main animated="false"></ion-router-outlet>
 </ion-app>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,31 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent  {
-  constructor(private router: Router) {
-    this.checkLogs();
-  }
 
+  menuOptions : any;
+  constructor(private router: Router,
+    public menuCtrl: MenuController,) {
+    this.checkLogs();
+
+    this.menuOptions = [
+      {
+          title: "Home",
+          url: "home",
+         // imgs: "assets/svg/home-dark.svg",
+      },
+      {
+          title: "Settings",
+          url: "home",
+          // imgs: "assets/svg/expenses.svg",
+      },
+      {
+          title: "Profile",
+          url: "signup",
+          //imgs: "assets/svg/reports.svg",
+      }
+  ];
+    
+  }
 
   checkLogs(){
     if (localStorage.getItem('introduction') === 'true') {
@@ -22,4 +44,10 @@ export class AppComponent  {
        console.log('test2');
     }
   }
+  
+  menutoggle() {
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'subMenu');
+}
+
 }
