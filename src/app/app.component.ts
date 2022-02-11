@@ -44,6 +44,7 @@ this.extraList = [
   {name:'Settings', img:'../../assets/images/dashboard-icons/admin.png'},
   {name:'About Us', img:'../../assets/images/dashboard-icons/user.png'},
   {name:'Share', img:'../../assets/images/dashboard-icons/next.png'},
+ // {name:'Log out', img:'../../assets/images/dashboard-icons/admin.png'},
 ];
     
   }

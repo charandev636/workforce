@@ -11,7 +11,7 @@
 </ion-header>
 <ion-content class="login-page">
   <ion-col>
-    <form [formGroup]="signUpForm" (ngSubmit)="formSubmit()">
+    <form [formGroup]="signUpForm" >
       <div class="login-form">
         <div>
           <ion-row class="instrLbl">
@@ -111,7 +111,7 @@
             </ion-label>
           </ion-row>
 
-          <ion-button class="signup-btn" style="margin: 14px;" fill="outline"  type="submit" (click)="navigateToSignup()">Submit
+          <ion-button class="signup-btn" style="margin: 14px;" fill="outline"  type="submit" (click)="navigateToLoginup()">Submit
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
           </ion-button>
            
