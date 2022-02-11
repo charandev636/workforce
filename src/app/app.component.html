@@ -19,7 +19,7 @@
           <ion-label class="activities">Activity</ion-label>
           <ion-list lines="none" mode="md">
             <ion-menu-toggle auto-hide="true" *ngFor="let page of productList;let i = index;">
-              <ion-item   routerDirection="forward" detail='false' mode="md">
+              <ion-item  (click)="navigateToNext(page.url)" routerDirection="forward" detail='false' mode="md">
                   <img [src]="page.img" class="imgSize"  slot="start"/>
                     <ion-label class="mb-0" > {{page.name}}</ion-label>
               </ion-item>
@@ -30,7 +30,7 @@
           <ion-label class="activities">Others</ion-label>
           <ion-list lines="none" mode="md">
             <ion-menu-toggle auto-hide="true" *ngFor="let page of otherList;let i = index;">
-              <ion-item   routerDirection="forward" detail='false' mode="md">
+              <ion-item  (click)="navigateToNext(page.url)"  routerDirection="forward" detail='false' mode="md">
                   <img [src]="page.img" class="imgSize" slot="start"/>
                     <ion-label class="mb-0" > {{page.name}}</ion-label>
               </ion-item>
@@ -40,7 +40,7 @@
           <hr class="hr">
           <ion-list lines="none" mode="md">
             <ion-menu-toggle auto-hide="true" *ngFor="let page of extraList;let i = index;">
-              <ion-item   routerDirection="forward" detail='false' mode="md">
+              <ion-item  (click)="navigateToNext(page.url)"  routerDirection="forward" detail='false' mode="md">
                   <img [src]="page.img" class="imgSize" slot="start"/>
                     <ion-label class="mb-0" > {{page.name}}</ion-label>
               </ion-item>
