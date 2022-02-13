@@ -35,13 +35,13 @@ export class AppComponent  {
     {name:'Order histroy', img:'../../assets/images/dashboard-icons/order-history.png',
     url: 'home'},
     {name:'Product list', img:'../../assets/images/dashboard-icons/product-list.png',
-    url: 'home'},
+    url: 'product'},
     {name:'Account Ledger', img:'../../assets/images/dashboard-icons/Accountledger.png',
     url: 'home'},
     {name:'Reports', img:'../../assets/images/dashboard-icons/report.png',
     url: 'home'},
     {name:'Payment History', img:'../../assets/images/dashboard-icons/paymenthistory.png',
-    url: 'home'},
+    url: 'payment'},
 ];
 this.otherList = [
     {name:'New Products & offers', img:'../../assets/images/dashboard-icons/new-product.png',

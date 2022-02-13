@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AddOrdersComponent } from './add-orders/add-orders.component';
 import { BookOrderComponent } from './book-order/book-order.component';
 import { HomeComponent } from './home/home.component';
 import { IntroSlidesComponent } from './intro-slides/intro-slides.component';
 import { LoginComponent } from './login/login.component';
+import { PaymentComponent } from './payment/payment.component';
+import { ProductsComponent } from './products/products.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -32,6 +35,21 @@ const routes: Routes = [
     path: 'bookorder',
     component:BookOrderComponent
   },
+  {
+    path: 'product',
+    component:ProductsComponent
+  },
+  {
+    path: 'payment',
+    component:PaymentComponent
+  },
+  {
+    path: 'addorders',
+    component:AddOrdersComponent
+  }
+  
+  
+  
 ];
 
 @NgModule({

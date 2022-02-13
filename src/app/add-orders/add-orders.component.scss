@@ -1,0 +1,42 @@
+.navBtn-icon{
+    color: white !important;
+    font-size: 1.65rem;
+  }
+
+  .mainHeader{
+    background: rgb(61, 60, 60);
+     height: 32px;
+  }
+  .headerLbl{
+    margin: 4px 0px 0px 12px;
+    // font-size: 1.2rem;
+    color: hsl(49, 84%, 40%);
+     font-size: 1.4em;
+  }
+
+  .darkTxt{
+    color: black;
+    font-size: 17px;
+  }
+  .lightTxt{
+    color: darkgray;
+    font-size: 16px;
+  }
+  .mainLblTxt{
+    color: hsl(45, 84%, 40%);
+    font-size: 17px;
+  }
+  .spTxt{
+    color: red;
+    font-size: 17px;
+  }
+  .leftPadding{
+    padding-left: 4px;
+  }
+  .mainTxt{
+    margin: 8px;
+    margin: 4px 0px 0px 6px;
+  }
+  ion-button {
+    --background: #c6af67;
+    }
