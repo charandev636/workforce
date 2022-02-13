@@ -9,11 +9,22 @@ import { NavController } from '@ionic/angular';
 export class AddOrdersComponent implements OnInit {
   mainProductsList = ['1','2','3','4'];
   subProductsList = ['1','2','3','4','5'];
-  constructor(private nav:NavController) { }
+  count = 0;
+  constructor(private nav: NavController) { }
 
   ngOnInit() {
   }
   goToHome(){
     this.nav.navigateRoot(['home']);
   }
+
+  countOrder(item){
+    if(item === 'add'){
+      this.count++;
+    }else{
+      this.count--;
+    }
+
+  }
+
 }

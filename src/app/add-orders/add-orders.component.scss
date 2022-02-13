@@ -40,3 +40,23 @@
   ion-button {
     --background: #c6af67;
     }
+
+  .add-prod{
+    border: 1px solid #c6af67;
+    font-size: 18px;
+    ion-icon{
+      color: #c6af67 !important;
+
+      zoom:1.5
+    }
+
+  }
+  .count{
+    ion-item {
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+ --min-height: 30px !important;
+  // here other custom CSS from documentation
+}
+  }
+

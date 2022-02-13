@@ -9,9 +9,9 @@ import { MenuController, NavController } from '@ionic/angular';
 })
 export class AppComponent  {
 
-  productList : any;
-  otherList : any;
-  extraList : any;
+  productList: any;
+  otherList: any;
+  extraList: any;
   constructor(private router: Router,
     private nav: NavController,
     public menuCtrl: MenuController,) {
@@ -59,19 +59,19 @@ this.extraList = [
   {name:'Log out', img:'../../assets/images/dashboard-icons/admin.png',
    url: 'Login'},
 ];
-    
+
   }
 
   checkLogs(){
     if (localStorage.getItem('introduction') === 'true') {
-     // this.router.navigate(['home']);
-      this.router.navigate(['Intro-sliders']);
-    
+      this.router.navigate(['addorders']);
+     // this.router.navigate(['Intro-sliders']);
+
     } else {
       this.router.navigate(['Intro-sliders']);
     }
   }
-  
+
   menutoggle() {
     this.menuCtrl.enable(true, 'mainMenu');
     this.menuCtrl.enable(false, 'subMenu');
