@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+  
+      <ion-button (click)="goToHome()">
+        <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="color: white;">Exchange & Return</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <hr class="hr">  <ion-row class="mainTxt">
+    <ion-col size="4" *ngFor="let obj of tabsArr" (click)="isSelectTab(obj)">
+<ion-label [ngClass]="obj.isSelect ? 'selectTab': ''">{{obj.name}}</ion-label>
+    </ion-col>
+
+  </ion-row>
+  <hr class="hr">
+</ion-content>

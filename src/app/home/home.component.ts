@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit {
       url: ''
     },
     {
-      name: 'Expiry / Return Product', img: '../../assets/images/dashboard-icons/product-return.png',
-      url: ''
+      name: 'Exchange / Return Product', img: '../../assets/images/dashboard-icons/product-return.png',
+      url: 'exchangereturns'
     },
   ];
   constructor(private router: Router,

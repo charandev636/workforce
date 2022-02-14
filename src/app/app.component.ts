@@ -46,8 +46,8 @@ export class AppComponent  {
 this.otherList = [
     {name:'New Products & offers', img:'../../assets/images/dashboard-icons/new-product.png',
     url: 'home'},
-    {name:'Expiry / Return Product', img:'../../assets/images/dashboard-icons/product-return.png',
-    url: 'home'},
+    {name:'Exchange / Return Product', img:'../../assets/images/dashboard-icons/product-return.png',
+    url: 'exchangereturns'},
 ];
 this.extraList = [
   {name:'Settings', img:'../../assets/images/dashboard-icons/admin.png',
