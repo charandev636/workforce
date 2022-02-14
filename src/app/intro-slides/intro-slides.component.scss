@@ -18,22 +18,11 @@
         width: 100%;
         }
         ion-slide {
-        height: 90vh;
+        height: 92vh;
         display: block;
 
         }
-        .skip-button {
-        float: left;
-        color: var(--ion-color-darkblue);
-        text-transform: capitalize;
-        font-size: 1rem;
-        }
-        .next-button{
-        float: right;
-        color: var(--ion-color-darkblue);
-        text-transform: capitalize;
-        font-size: 1rem;
-        }
+
       .slide-text{
         position: absolute;
         bottom: 30px;
@@ -73,4 +62,33 @@
               background-image: url("~src/assets/svg/3.svg");
               background-repeat: no-repeat;
               background-size: cover !important;
+        }
+.firstslide{
+  background-color: #30a8b8;
+  color: white;
+
+}
+
+.secondslide {
+  background-color:#2eb78d;
+  color: white;
+}
+
+
+.thirdslide {
+  background-color:#6078d2;
+  color: white;
+}
+
+  .skip-button {
+
+        color: var(--ion-color-primary-contrast);
+        text-transform: capitalize;
+        font-size: 1rem;
+        }
+        .next-button{
+        float: right;
+      color: var(--ion-color-primary-contrast) !important;
+        text-transform: capitalize;
+        font-size: 1rem;
         }

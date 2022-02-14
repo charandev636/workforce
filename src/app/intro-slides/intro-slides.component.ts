@@ -23,7 +23,21 @@ export class IntroSlidesComponent implements OnInit {
     this.slides.getActiveIndex().then(index =>{
       this.count = index;
     });
+    this.getColor();
+    console.log(this.getColor());
   }
+
+  getColor() {
+   if(this.count === 0) {
+      return 'firstslide';
+   }
+   if (this.count === 1 ) {
+      return 'secondslide';
+   }
+
+// add more condition here or use a switch statement above.
+    return 'thirdslide';
+}
 
   skipButton(){
     localStorage.setItem('introduction', 'true');

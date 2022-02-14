@@ -64,8 +64,8 @@ this.extraList = [
 
   checkLogs(){
     if (localStorage.getItem('introduction') === 'true') {
-      this.router.navigate(['addorders']);
-     // this.router.navigate(['Intro-sliders']);
+      //this.router.navigate(['addorders']);
+      this.router.navigate(['Intro-sliders']);
 
     } else {
       this.router.navigate(['Intro-sliders']);
