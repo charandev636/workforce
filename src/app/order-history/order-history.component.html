@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+  
+      <ion-button (click)="goToHome()">
+        <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-title style="color: white;">Order History</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search" class="navBtn-icon"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="funnel" class="navBtn-icon"></ion-icon>
+      </ion-button>
+
+    
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="mobileView">
+  <ion-row class="rowAlign">
+    <ion-col size="6">
+      <ion-label style="color: red; font-size: 1em;">Total Orders Amount</ion-label>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label class="darkTxt">10,8500</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row class="rowAlign">
+    <ion-col size="3">
+      <ion-grid>
+        <ion-label>Added</ion-label>
+        <ion-card class="rounderCard" style="background: #00b7ff">
+          <ion-label>9</ion-label>
+        </ion-card>
+      </ion-grid>
+    </ion-col>
+    <ion-col size="3">
+      <ion-grid>
+        <ion-label>Onhold</ion-label>
+        <ion-card class="rounderCard">
+          <ion-label>9</ion-label>
+        </ion-card>
+      </ion-grid>
+    </ion-col>
+    <ion-col size="3">
+      <ion-grid>
+        <ion-label>Accepted</ion-label>
+        <ion-card class="rounderCard" style="background: green">
+          <ion-label>9</ion-label>
+        </ion-card>
+      </ion-grid>
+    </ion-col>
+    <ion-col size="3">
+      <ion-grid>
+        <ion-label>Rejected</ion-label>
+        <ion-card class="rounderCard" style="background: red">
+          <ion-label>9</ion-label>
+        </ion-card>
+      </ion-grid>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-card *ngFor="let item of bookingOrdersData" class="row-margin mainCard">
+      <ion-row class="row-margin">
+        <ion-col size="6">
+          <ion-label class="darkTxt">Order ID :</ion-label>
+          <ion-label class="mainTxt leftPadding">1032</ion-label>
+        </ion-col>
+        <ion-col size="6">
+          <ion-label class="darkTxt">Amount :</ion-label>
+          <ion-label class="lightTxt leftPadding">10,320</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-margin">
+        <ion-col size="12">
+          <ion-label class="lightTxt">Invoice/Bill No :</ion-label>
+          <ion-label class="mainTxt leftPadding">GR1234TG</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-margin">
+        <ion-col size="12">
+          <ion-label class="lightTxt">Order of :</ion-label>
+          <ion-label class="mainTxt leftPadding">Masqati private limited</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-margin">
+        <ion-col size="12">
+          <ion-label class="lightTxt">Remark :</ion-label>
+          <ion-label class="mainTxt leftPadding">Testing</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-margin">
+        <ion-col size="6">
+          <ion-icon name="time" class="InstImg"></ion-icon>
+          <ion-label class="mainTxt leftPadding">12 Feb 2022 10:12</ion-label>
+        </ion-col>
+        <ion-col size="6">
+          <ion-icon name="person" class="InstImg"></ion-icon>
+          <ion-label class="lightTxt leftPadding">Guntuka Suman</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-margin">
+        <ion-col size="12">
+          <ion-label class="lightTxt">Status :</ion-label>
+          <ion-label class="mainTxt leftPadding">Testing</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

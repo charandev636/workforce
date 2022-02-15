@@ -37,3 +37,49 @@
     margin: 8px;
     margin: 4px 0px 0px 6px;
   }
+  .ImgSize{
+    background: #d8d8d8;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    margin:6px
+  }
+  .smallTxt{
+    font-size: smaller;
+    color: black;
+    margin: 4px 0px 0px 4px;;
+  }
+  .priceTxt{
+    font-size: smaller;
+    color: red;
+ 
+  }
+  .add-prod{
+    border: 1px solid #c6af67;
+    font-size: 18px;
+    ion-icon{
+      color: #c6af67 !important;
+
+      zoom:1.5
+    }
+
+  }
+  .count{
+    ion-item {
+      margin: 4px;
+  --padding-end: 0px;
+  --inner-padding-end: 0px;
+ --min-height: 30px !important;
+  // here other custom CSS from documentation
+}
+  }
+.rowAlign{
+  margin: 12px;
+}
+.rowAlign{
+  margin: 10px;
+}
+.fab-btn{
+  --background:#bb931c;
+  --color:#ffff;
+ }

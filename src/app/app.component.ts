@@ -33,7 +33,7 @@ export class AppComponent  {
     {name:'Book Order', img:'../../assets/images/dashboard-icons/delivery-box.png',
     url: 'bookorder'},
     {name:'Order histroy', img:'../../assets/images/dashboard-icons/order-history.png',
-    url: 'home'},
+    url: 'orderhistory'},
     {name:'Product list', img:'../../assets/images/dashboard-icons/product-list.png',
     url: 'product'},
     {name:'Account Ledger', img:'../../assets/images/dashboard-icons/Accountledger.png',

@@ -1,0 +1,59 @@
+.circleBack{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: 0 !important;
+    padding-top: 5px;
+    background: #c3ac65;
+    border-radius: 15px;
+    color: white;
+  }
+
+  .rowAlign{
+    margin: 12px;
+  }
+  .rounderCard{
+    height: 50px;
+    width: 50px;
+    margin: 0 !important;
+    background: #c3ac65;
+    border-radius: 100%;
+    font-size: 18px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 11px;
+
+  }
+  .darkTxt{
+    color: black;
+    font-size: 17px;
+  }
+  .lightTxt{
+    color: darkgray;
+    font-size: 16px;
+  }
+  .mainTxt{
+    color: hsl(45, 84%, 40%);
+    font-size: 17px;
+
+  }
+ 
+  .leftPadding{
+    padding-left: 4px;
+  }
+  .mainCard{
+    margin: 16px;
+  }
+  .fab-btn{
+    --background:rgba(99, 9, 184, 0.856);
+     --color:#ffff;
+    }
+    .InstImg{
+      height: 20px;
+      width: 20px;
+    }
+    .navBtn-icon{
+      color: white !important;
+      font-size: 1.65rem;
+    }

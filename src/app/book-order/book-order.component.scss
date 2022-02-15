@@ -20,7 +20,6 @@
     border-radius: 100%;
     font-size: 18px;
     color: white;
-    font-size: 1.3em;
     text-align: center;
     padding-top: 11px;
 
@@ -46,9 +45,9 @@
     margin: 16px;
   }
   .fab-btn{
-    --background:rgba(99, 9, 184, 0.856);
-     --color:#ffff;
-    }
+    --background:#bb931c;
+    --color:#ffff;
+   }
     .InstImg{
       height: 20px;
       width: 20px;
@@ -57,3 +56,52 @@
       color: white !important;
       font-size: 1.65rem;
     }
+    .heardeView{
+      height: 30px;
+      background: #c3ac65;
+      ion-label{
+        color: white;
+        margin: 5px 0px 0px 8px;
+        font-size: 18px;
+      }
+    }
+
+      .ImgSize{
+        background: #d8d8d8;
+        border-radius: 5px;
+        height: 100px;
+        width: 100px;
+        margin:6px
+      }
+      .smallTxt{
+        font-size: smaller;
+        color: black;
+        margin: 4px 0px 0px 4px;;
+      }
+      .priceTxt{
+        font-size: smaller;
+        color: red;
+     
+      }
+      .add-prod{
+        border: 1px solid #c6af67;
+        font-size: 18px;
+        ion-icon{
+          color: #c6af67 !important;
+    
+          zoom:1.5
+        }
+    
+      }
+      .count{
+        ion-item {
+          margin: 4px;
+      --padding-end: 0px;
+      --inner-padding-end: 0px;
+     --min-height: 30px !important;
+      // here other custom CSS from documentation
+    }
+    .rowAlign{
+      margin: 12px;
+    }
+  }
