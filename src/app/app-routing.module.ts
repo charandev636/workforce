@@ -6,6 +6,7 @@ import { ExchangeandreturnsComponent } from './exchangeandreturns/exchangeandret
 import { HomeComponent } from './home/home.component';
 import { IntroSlidesComponent } from './intro-slides/intro-slides.component';
 import { LoginComponent } from './login/login.component';
+import { OrderHistoryDetailsComponent } from './order-history/order-history-details/order-history-details.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductsComponent } from './products/products.component';
@@ -56,10 +57,12 @@ const routes: Routes = [
   {
     path: 'orderhistory',
     component:OrderHistoryComponent
+  },
+   {
+    path: 'order-history-details',
+    component:OrderHistoryDetailsComponent
   }
-  
-  
-  
+
 ];
 
 @NgModule({

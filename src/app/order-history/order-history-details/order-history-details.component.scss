@@ -1,0 +1,45 @@
+
+.order-history-details-page{
+  --background: #FAFAFA;
+
+  .details-font{
+    font-size: 12px;
+  }
+  .pdf-icon{
+    font-size: 25px;
+    float: right;
+  }
+  .left-bar{
+    padding-left: 10px;
+  }
+
+  .grid-header{
+    background-color: #ffff;
+    font-weight: 600;
+  }
+  .grid-content{
+    background-color: #ffff;
+    margin-top: 3px;
+     .grey-text{
+        color: gray;
+        font-size: 18px;
+      }
+      .prod-name{
+        color: gray;
+        font-size: 16px;
+      }
+      .black-large-text{
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .red-text{
+        color: red;
+      }
+      .price-text{
+        font-size: 12px;
+      }
+  }
+
+}
+
