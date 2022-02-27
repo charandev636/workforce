@@ -19,15 +19,25 @@
 </ion-header>
 
 <ion-content class="mobileView">
- 
+  <ion-col size="12">
+    <ion-row class="heardeSearch">
+      <ion-icon name="search" class="searchIcon"></ion-icon>
+      <ion-input></ion-input>
+      <ion-icon name="options" class="searchIcon"></ion-icon>
+
+    </ion-row>
+  </ion-col>
+
+<div *ngFor="let item of mainOrderData">
   <ion-row class="heardeView">
-    <ion-label style="color: white; margin: 6px 0px 0px 6px;">Suman Guntuka</ion-label>
+    <ion-label style="color: white; margin: 8px 0px 0px 6px;">Namken(12 items)</ion-label>
   </ion-row>
+ 
   <ion-list>
     <ion-card *ngFor="let item of subProductsList" class="row-margin mainCard">
-      <ion-row class="ion-no-padding ion-no-margin">
+      <!-- <ion-row class="ion-no-padding ion-no-margin">
         <ion-label class="smallTxt">ID:123</ion-label>
-      </ion-row>
+      </ion-row> -->
       <ion-row class="ion-no-padding ion-no-margin">
 
         <ion-col size="4" class="ion-no-padding ion-no-margin">
@@ -37,7 +47,10 @@
         </ion-col>
         <ion-col size="8">
           <ion-row class="rowAlign">
-            <ion-label class="darkTxt"> Milk Chudwai Milk Chudwai Milk Chudwai</ion-label>
+            <ion-label class="smallTxt">ID:123</ion-label>
+          </ion-row>
+          <ion-row class="rowAlign">
+            <ion-label class="darkTxt"> Milk Chudwai</ion-label>
           </ion-row>
           <ion-row class="rowAlign">
           <ion-label class="lightTxt" style="font-size: smaller;"> Suman guntuka</ion-label>
@@ -64,6 +77,8 @@
 
     </ion-card>
   </ion-list>
+</div>
+  
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button class="fab-btn" (click)="bookOrder()">

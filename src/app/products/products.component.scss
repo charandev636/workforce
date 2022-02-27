@@ -2,6 +2,26 @@
     color: white !important;
     font-size: 1.65rem;
   }
+  .heardeSearch{
+    height: 52px;
+    background-color: #EBEFF3;
+    margin: 0px 32px 0px 32px;
+    border-radius: 8px;
+  }
+  .searchIcon{
+    margin: 16px;
+    height: 20px;
+    width: 20px;
+  }
+  .heardeView{
+    height: 40px;
+    background: #c3ac65;   
+    ion-label{
+      color: white;
+      margin: 8px 0px 0px 8px;
+      font-size: 18px;
+    }
+  }
 
   .mainHeader{
     background: rgb(61, 60, 60);
@@ -20,7 +40,7 @@
   }
   .lightTxt{
     color: darkgray;
-    font-size: 16px;
+    font-size: 14px;
   }
   .mainLblTxt{
     color: hsl(45, 84%, 40%);
@@ -42,7 +62,7 @@
     border-radius: 5px;
     height: 100px;
     width: 100px;
-    margin:6px
+    margin:12px
   }
   .smallTxt{
     font-size: smaller;
@@ -74,12 +94,11 @@
 }
   }
 .rowAlign{
-  margin: 12px;
+  margin: 4px;
 }
-.rowAlign{
-  margin: 10px;
-}
+
 .fab-btn{
-  --background:#bb931c;
+  --background:#072c92;
   --color:#ffff;
+  margin: 12px;
  }

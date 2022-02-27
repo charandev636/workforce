@@ -9,18 +9,18 @@ import { NavController } from '@ionic/angular';
 })
 export class BookOrderComponent implements OnInit {
 
-  constructor(private nav: NavController,private router: Router) { }
+  constructor(private nav: NavController) { }
 bookingOrdersData : any;
+mainOrderData : any;
 count = 2;
 
 
   ngOnInit() {
-    this.bookingOrdersData = ['1','2','3','4','5','6']
+    this.bookingOrdersData = ['1','2','3']
+    this.mainOrderData = ['1','2'];
   }
 
-  bookOrder() {
-    this.router.navigate(['addorders']);
-  }
+  
   goToHome(){
     this.nav.navigateRoot(['home']);
   }

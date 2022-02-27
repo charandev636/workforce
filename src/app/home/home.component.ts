@@ -54,6 +54,6 @@ export class HomeComponent implements OnInit {
   }
 
   bookOrder() {
-    this.router.navigate(['addorders']);
+    this.router.navigate(['bookorder']);
   }
 }

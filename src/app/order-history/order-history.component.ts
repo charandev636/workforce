@@ -29,7 +29,7 @@ export class OrderHistoryComponent implements OnInit {
 
   }
   bookOrder() {
-    this.router.navigate(['addorders']);
+    this.router.navigate(['bookorder']);
   }
   goToHome(){
     this.nav.navigateRoot(['home']);
@@ -39,4 +39,5 @@ export class OrderHistoryComponent implements OnInit {
   goToOrderDetails(){
     this.nav.navigateRoot(['order-history-details']);
   }
+  
 }
