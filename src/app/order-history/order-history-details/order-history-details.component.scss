@@ -22,24 +22,55 @@
     margin-top: 3px;
      .grey-text{
         color: gray;
-        font-size: 18px;
+        font-size: 16px;
       }
       .prod-name{
         color: gray;
-        font-size: 16px;
+        font-size: 14px;
       }
       .black-large-text{
         color: black;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 600;
       }
       .red-text{
         color: red;
       }
       .price-text{
-        font-size: 12px;
+        font-size: 11px;
+      }
+      .float-right{
+        float: right;
+      }
+      .small-text{
+        font-size: 11px;
+      }
+      .bold-text{
+        font-weight: 600;
+        color: rgb(41, 38, 38);
       }
   }
 
+  .footer-table{
+
+  ion-row:first-child {
+    background-color:  #ffff;
+    font-weight: bold;
+
+  }
+  ion-col {
+    border-top: 1px solid black;
+
+  }
+
+
+  ion-row:last-child {
+    border-bottom: 1px solid black;
+  }
+
 }
+
+}
+
+
 
