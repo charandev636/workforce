@@ -26,11 +26,11 @@
   }
   .darkTxt{
     color: black;
-    font-size: 17px;
+    font-size: 15px;
   }
   .lightTxt{
     color: darkgray;
-    font-size: 16px;
+    font-size: 14px;
   }
   .mainTxt{
     color: hsl(45, 84%, 40%);
@@ -45,8 +45,15 @@
     margin: 16px;
   }
   .fab-btn{
-    --background:#bb931c;
+    --background:#072c92;
     --color:#ffff;
+    margin: 12px;
+   }
+   .summeryBtn{
+    --background:#072c92;
+    --color:#ffff;
+    margin: 12px;
+    width: 150px;
    }
     .InstImg{
       height: 20px;
@@ -57,7 +64,7 @@
       font-size: 1.65rem;
     }
     .heardeView{
-      height: 30px;
+      height: 34px;
       background: #c3ac65;
       ion-label{
         color: white;
@@ -68,10 +75,10 @@
 
       .ImgSize{
         background: #d8d8d8;
-        border-radius: 5px;
-        height: 100px;
-        width: 100px;
-        margin:6px
+        border-radius: 8px;
+        height: 70px;
+        width: 70px;
+        margin:4px
       }
       .smallTxt{
         font-size: smaller;
@@ -83,25 +90,33 @@
         color: red;
      
       }
-      .add-prod{
-        border: 1px solid #c6af67;
-        font-size: 18px;
-        ion-icon{
-          color: #c6af67 !important;
+      // .add-prod{
+      //   border: 1px solid #c6af67;
+      //   font-size: 18px;
+      //   ion-icon{
+      //     color: #c6af67 !important;
     
-          zoom:1.5
-        }
+      //     zoom:1.5
+      //   }
     
+      // }
+      .addBtn{
+        color: white;
+        height: 32px;
+        width: 70px;
+      // background:  #c6af67 !important;
+       --background:#c6af67 !important;
+
       }
       .count{
         ion-item {
           margin: 4px;
       --padding-end: 0px;
       --inner-padding-end: 0px;
-     --min-height: 30px !important;
+     //--min-height: 40px !important;
       // here other custom CSS from documentation
     }
     .rowAlign{
-      margin: 12px;
+      margin: 8px;
     }
   }

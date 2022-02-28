@@ -10,6 +10,7 @@ import { OrderHistoryDetailsComponent } from './order-history/order-history-deta
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductsComponent } from './products/products.component';
+import { ReportsComponent } from './reports/reports.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -61,7 +62,12 @@ const routes: Routes = [
    {
     path: 'order-history-details',
     component:OrderHistoryDetailsComponent
-  }
+  },
+  {
+    path: 'reports',
+    component:ReportsComponent
+  },
+  
 
 ];
 
