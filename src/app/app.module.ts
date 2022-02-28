@@ -17,6 +17,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { AddOrdersComponent } from './add-orders/add-orders.component';
 import { ExchangeandreturnsComponent } from './exchangeandreturns/exchangeandreturns.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [AppComponent,
@@ -28,8 +29,9 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
     ProductsComponent,
     PaymentComponent,
     AddOrdersComponent,
-  ExchangeandreturnsComponent,
-  OrderHistoryComponent],
+    ExchangeandreturnsComponent,
+    OrderHistoryComponent,
+    ReportsComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

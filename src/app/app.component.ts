@@ -39,7 +39,7 @@ export class AppComponent  {
     {name:'Account Ledger', img:'../../assets/images/dashboard-icons/Accountledger.png',
     url: 'home'},
     {name:'Reports', img:'../../assets/images/dashboard-icons/report.png',
-    url: 'home'},
+    url: 'reports'},
     {name:'Payment History', img:'../../assets/images/dashboard-icons/paymenthistory.png',
     url: 'payment'},
 ];
@@ -66,7 +66,7 @@ this.extraList = [
     if (localStorage.getItem('introduction') === 'true') {
       //this.router.navigate(['addorders']);
       this.router.navigate(['Intro-sliders']);
-      this.router.navigate(['product']);
+      this.router.navigate(['reports']);
 
 
     } else {
