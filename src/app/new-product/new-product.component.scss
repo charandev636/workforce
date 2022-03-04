@@ -1,0 +1,110 @@
+.new-product-header{
+  background-color: #c6af67;
+  height: 30%;
+
+  .header{
+    margin-top: 4%;
+    margin-left: 2%;
+    height: 30%;
+
+    .dash-logo{
+      text-align: center;
+    }
+    .backBtn-icon{
+      font-size: 20px;
+      color: #ffff;
+    }
+
+    .logo{
+      height: 122px;
+    width: 155px;
+
+    }
+    .notification-icon{
+      color: white !important;
+      font-size: 2rem;
+    }
+
+
+
+  }
+
+.center-logo{
+  text-align: center;
+
+  .center-text{
+    font-size: 30px;
+    color: #ffff;
+    text-align: center;
+  //  font-family: 'Montserrat', sans-serif;
+
+  }
+}
+  .status-card{
+    width: 100%;
+
+    .card-section{
+      border-radius: 5px;
+      margin-top: 0;
+
+    }
+    .card-content{
+      margin: 10px;
+      background: #d8d8d8;
+      border-radius: 5px;
+      height: 200px;
+    }
+    ion-slides {
+      height: 100%;
+
+      .swiper-container-horizontal>.swiper-pagination-bullets{
+        display: none;
+      }
+    }
+  }
+
+  .product-card{
+    .card-section-2{
+      padding: 14px;
+      margin-top: 0;
+    }
+    .launch-date-text{
+      color: #c6af67;
+      font-size: 0.8rem;
+      float: right;
+    }
+
+    .prod-image{
+      height: 50px;
+      width: 70px;
+    }
+
+    .Desc-key{
+      font-size: 16px;
+    }
+    .desc-text{
+      font-size: 13px;
+    }
+
+    .prod-name{
+      font-size: 15px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .post-date{
+      font-size: 13px;
+      float: right;
+    }
+
+  }
+
+  .fab-btn{
+    --background:#072c92;
+    --color:#ffff;
+    margin: 12px;
+   }
+  .add-icon{
+    font-size: 40px;
+  }
+}

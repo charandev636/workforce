@@ -6,6 +6,7 @@ import { ExchangeandreturnsComponent } from './exchangeandreturns/exchangeandret
 import { HomeComponent } from './home/home.component';
 import { IntroSlidesComponent } from './intro-slides/intro-slides.component';
 import { LoginComponent } from './login/login.component';
+import { NewProductComponent } from './new-product/new-product.component';
 import { OrderHistoryDetailsComponent } from './order-history/order-history-details/order-history-details.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
 import { PaymentComponent } from './payment/payment.component';
@@ -67,7 +68,11 @@ const routes: Routes = [
     path: 'reports',
     component:ReportsComponent
   },
-  
+  {
+    path:'new-product',
+    component:NewProductComponent
+  }
+
 
 ];
 

@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
   otherList = [
     {
       name: 'New Products & offers', img: '../../assets/images/dashboard-icons/new-product.png',
-      url: ''
+      url: 'new-product'
     },
     {
       name: 'Exchange / Return Product', img: '../../assets/images/dashboard-icons/product-return.png',

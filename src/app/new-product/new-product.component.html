@@ -1,0 +1,65 @@
+<ion-content class="new-product-page">
+<ion-grid class="new-product-header">
+  <ion-row class="header">
+      <ion-icon (click)="goToHome()" name="arrow-back" class="backBtn-icon"></ion-icon>
+
+  </ion-row>
+  <div class="center-logo">
+    <ion-text class="center-text">New Products <br> & Offers</ion-text>
+  </div>
+
+  <ion-grid class="status-card">
+    <ion-card class="card-section">
+      <ion-card-content class="card-content">
+              <ion-slides pager="true" [options]="slideOpts">
+                <ion-slide>
+                  <h1>Slide 1</h1>
+                </ion-slide>
+                <ion-slide>
+                  <h1>Slide 2</h1>
+                </ion-slide>
+                <ion-slide>
+                  <h1>Slide 3</h1>
+                </ion-slide>
+              </ion-slides>
+
+      </ion-card-content>
+    </ion-card>
+
+  </ion-grid>
+  <ion-grid class="product-card">
+    <ion-card class="card-section-2">
+      <ion-row>
+        <ion-col size="4">
+          <ion-text>ID : 2432</ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <ion-text class="launch-date-text">Launching Date : 15th March</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+          <img class="prod-image" src="./../../assets/images/food.jpg"/>
+        </ion-col>
+        <ion-col size="9">
+          <ion-text class="Desc-key">Description : </ion-text><span class="desc-text">This is product description</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+         <ion-text class="prod-name">Food</ion-text>
+        </ion-col>
+        <ion-col size="9">
+          <ion-text class="post-date"> Posted 12/02/2022 11:00 pm  </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+</ion-grid>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button class="fab-btn" (click)="bookOrder()">
+    <ion-icon class="add-icon" name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</ion-content>
