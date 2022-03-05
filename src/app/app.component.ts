@@ -72,6 +72,9 @@ this.extraList = [
       //this.router.navigate(['addorders']);
      // this.router.navigate(['Intro-sliders']);
       this.router.navigate(['new-product-details']);
+<<<<<<< HEAD
+>>>>>>> 947536064914749ca0a0fd994a3a15351b39772f
+=======
 >>>>>>> 947536064914749ca0a0fd994a3a15351b39772f
 
 
