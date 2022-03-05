@@ -1,0 +1,63 @@
+.new-product-header{
+  background-color: #c6af67;
+  height: 38%;
+
+  .header{
+    margin-top: 4%;
+    margin-left: 2%;
+    height: 30%;
+
+    .dash-logo{
+      text-align: center;
+    }
+    .backBtn-icon{
+      font-size: 20px;
+      color: #ffff;
+    }
+
+    .title-text{
+      color: #ffff;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+
+  }
+
+
+  .status-card{
+    width: 100%;
+
+    .card-section{
+      border-radius: 5px;
+      margin-top: 0;
+      padding: 11px 12px;
+
+        .id-text{
+         color: #909090;
+         font-size: 12px;
+         font-weight: 400;
+        }
+
+        .detail-img{
+          margin-top: 10px;
+          height: 120px;
+          width: 100%;
+        }
+        .prod-name{
+          font-size: 22px;
+          font-weight: 500;
+          text-align: center;
+          margin-top: 5px;
+        }
+
+        .lunch-text{
+          font-size: 18px;
+        }
+
+        .desc-text{
+          font-size: 16px;
+        }
+    }
+
+  }
+}

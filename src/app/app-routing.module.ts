@@ -6,6 +6,7 @@ import { ExchangeandreturnsComponent } from './exchangeandreturns/exchangeandret
 import { HomeComponent } from './home/home.component';
 import { IntroSlidesComponent } from './intro-slides/intro-slides.component';
 import { LoginComponent } from './login/login.component';
+import { NewProductDetailsComponent } from './new-product/new-product-details/new-product-details.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { OrderHistoryDetailsComponent } from './order-history/order-history-details/order-history-details.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path:'new-product',
     component:NewProductComponent
+  },
+  {
+    path:'new-product-details',
+    component:NewProductDetailsComponent
   }
 
 

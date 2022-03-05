@@ -66,7 +66,7 @@ this.extraList = [
     if (localStorage.getItem('introduction') === 'true') {
       //this.router.navigate(['addorders']);
      // this.router.navigate(['Intro-sliders']);
-      this.router.navigate(['new-product']);
+      this.router.navigate(['new-product-details']);
 
 
     } else {
