@@ -15,7 +15,13 @@ export class NewProductComponent implements OnInit {
   constructor(private router: NavController) { }
 
   ngOnInit() {}
-goToHome(){
-  this.router.navigateRoot(['home']);
-}
+
+  goToHome(){
+    this.router.navigateRoot(['home']);
+  }
+
+  navToprodDetails(){
+    this.router.navigateRoot(['new-product-details']);
+  }
+
 }

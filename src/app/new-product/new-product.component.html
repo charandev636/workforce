@@ -11,7 +11,7 @@
   <ion-grid class="status-card">
     <ion-card class="card-section">
       <ion-card-content class="card-content">
-              <ion-slides pager="true" [options]="slideOpts">
+              <ion-slides pager="false" [options]="slideOpts">
                 <ion-slide>
                   <h1>Slide 1</h1>
                 </ion-slide>
@@ -28,7 +28,7 @@
 
   </ion-grid>
   <ion-grid class="product-card">
-    <ion-card class="card-section-2">
+    <ion-card class="card-section-2" (click)="navToprodDetails()">
       <ion-row>
         <ion-col size="4">
           <ion-text>ID : 2432</ion-text>

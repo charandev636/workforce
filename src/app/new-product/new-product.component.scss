@@ -1,6 +1,6 @@
 .new-product-header{
   background-color: #c6af67;
-  height: 30%;
+  height: 38%;
 
   .header{
     margin-top: 4%;
@@ -17,7 +17,7 @@
 
     .logo{
       height: 122px;
-    width: 155px;
+      width: 155px;
 
     }
     .notification-icon{
@@ -31,6 +31,7 @@
 
 .center-logo{
   text-align: center;
+  margin-bottom: 15px;
 
   .center-text{
     font-size: 30px;
@@ -46,26 +47,20 @@
     .card-section{
       border-radius: 5px;
       margin-top: 0;
+      .card-content{
+        margin: 10px;
+        background: #d8d8d8;
+        border-radius: 5px;
+        height: 200px;
 
-    }
-    .card-content{
-      margin: 10px;
-      background: #d8d8d8;
-      border-radius: 5px;
-      height: 200px;
-    }
-    ion-slides {
-      height: 100%;
-
-      .swiper-container-horizontal>.swiper-pagination-bullets{
-        display: none;
       }
     }
+
   }
 
   .product-card{
     .card-section-2{
-      padding: 14px;
+      padding: 10px;
       margin-top: 0;
     }
     .launch-date-text{
@@ -98,13 +93,16 @@
     }
 
   }
-
-  .fab-btn{
-    --background:#072c92;
-    --color:#ffff;
-    margin: 12px;
-   }
   .add-icon{
     font-size: 40px;
   }
 }
+<<<<<<< HEAD
+.fab-btn{
+  --background:#072c92;
+  --color:#ffff;
+  margin: 12px;
+ }
+=======
+
+>>>>>>> 947536064914749ca0a0fd994a3a15351b39772f

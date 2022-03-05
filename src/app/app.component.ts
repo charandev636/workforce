@@ -64,9 +64,15 @@ this.extraList = [
 
   checkLogs(){
     if (localStorage.getItem('introduction') === 'true') {
+<<<<<<< HEAD
+      //this.router.navigate(['bookorder']);
+      this.router.navigate(['Intro-sliders']);
+     // this.router.navigate(['new-product']);
+=======
       //this.router.navigate(['addorders']);
      // this.router.navigate(['Intro-sliders']);
-      this.router.navigate(['new-product']);
+      this.router.navigate(['new-product-details']);
+>>>>>>> 947536064914749ca0a0fd994a3a15351b39772f
 
 
     } else {
