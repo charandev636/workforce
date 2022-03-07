@@ -39,5 +39,4 @@ export class OrderHistoryComponent implements OnInit {
   goToOrderDetails(){
     this.nav.navigateRoot(['order-history-details']);
   }
-  
 }

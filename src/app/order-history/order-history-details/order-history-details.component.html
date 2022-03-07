@@ -51,25 +51,64 @@
         <div class="small-text float-right">250,00+10.2%</div>
       </ion-col>
     </ion-row>
-    <ion-grid>
-    <ion-row class="footer-table ion-margin">
-      <ion-grid class="ion-margin">
-        <ion-row>
-          <ion-col>%</ion-col>
-          <ion-col>CGST</ion-col>
-          <ion-col>SGST</ion-col>
-          <ion-col>IGST</ion-col>
-        </ion-row>
-        <ion-row >
-          <ion-col>1</ion-col>
-          <ion-col>3</ion-col>
-          <ion-col>5</ion-col>
-          <ion-col>23</ion-col>
-        </ion-row>
-      </ion-grid>
 
-    </ion-row>
-    </ion-grid>
   </ion-grid>
+<ion-grid class="footer-table m-0">
+  <ion-accordion-group class="accord-table">
+    <ion-accordion value="">
+      <ion-item slot="header" class="arrow">
+
+      </ion-item>
+      <ion-list slot="content" class="list-box">
+        <ion-grid class="table-content">
+          <ion-row class="row-border">
+            <ion-col>%</ion-col>
+            <ion-col>CGST</ion-col>
+            <ion-col>SGST</ion-col>
+            <ion-col>IGST</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>1</ion-col>
+            <ion-col>3</ion-col>
+            <ion-col>5</ion-col>
+            <ion-col>23</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>1</ion-col>
+            <ion-col>3</ion-col>
+            <ion-col>5</ion-col>
+            <ion-col>23</ion-col>
+          </ion-row>
+                  <ion-row>
+                    <ion-col><div class="black-font">Any Discount </div><div>5</div> </ion-col>
+                    <ion-col><div class="black-font">Other Charge</div> <div>5.00</div></ion-col>
+                    <ion-col><div class="black-font">GST Amount </div><div>50000</div></ion-col>
+
+                  </ion-row>
+        </ion-grid>
+      </ion-list>
+    </ion-accordion>
+  </ion-accordion-group>
+
+</ion-grid>
 
 </ion-content>
+
+<ion-footer class="footer" >
+  <ion-row class="footer-text">
+    <ion-col  size="3.4">
+      <div class="header">No.of Items</div>
+      <div class="value">5</div>
+    </ion-col>
+    <ion-col class="border-line" size="0.5">|</ion-col>
+    <ion-col size="3.8">
+      <div class="header">Total Quantity</div>
+      <div class="value">5.00</div>
+    </ion-col>
+    <ion-col size="0.5" class="border-line">|</ion-col>
+    <ion-col size="3">
+      <div class="header">Grand Total</div>
+      <div class="value">21233.0</div>
+    </ion-col>
+  </ion-row>
+</ion-footer>

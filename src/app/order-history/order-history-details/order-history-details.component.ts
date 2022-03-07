@@ -7,7 +7,7 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./order-history-details.component.scss'],
 })
 export class OrderHistoryDetailsComponent implements OnInit {
-
+  list = ['1','2','3','4'];
   constructor(private nav: NavController) { }
 
   ngOnInit() {}
@@ -15,5 +15,5 @@ export class OrderHistoryDetailsComponent implements OnInit {
   goToOrderHistory(){
     this.nav.navigateRoot(['orderhistory']);
   }
-  
+
 }
