@@ -2,7 +2,6 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button fill="clear">
-        
         <img src="assets/svg/back.svg" (click)="backBtn()" />
       </ion-button>
     </ion-buttons>
@@ -17,7 +16,7 @@
           <ion-row class="instrLbl">
            <ion-label>
             Company Name
-           </ion-label> 
+           </ion-label>
           </ion-row>
           <ion-item lines="none">
             <ion-input class="txtfont" formControlName="companyName" placeholder="Company Name" [(ngModel)]="signUpModel.companyName" type="text" required></ion-input>
@@ -30,7 +29,7 @@
           <ion-row class="instrLbl">
             <ion-label>
              Owner Name
-            </ion-label> 
+            </ion-label>
            </ion-row>
 
           <ion-item lines="none">
@@ -45,7 +44,7 @@
           <ion-row class="instrLbl">
             <ion-label>
              Owner Number
-            </ion-label> 
+            </ion-label>
            </ion-row>
 
           <ion-item lines="none">
@@ -60,7 +59,7 @@
           <ion-row class="instrLbl">
             <ion-label>
              Owner EmailId
-            </ion-label> 
+            </ion-label>
            </ion-row>
 
           <ion-item lines="none">
@@ -71,12 +70,12 @@
               <div *ngIf="f.password.errors.required">{{validationMsg.password}}</div>
             </div> -->
           </ion-item>
-        
+
 
           <ion-row class="instrLbl">
             <ion-label>
              Area Name
-            </ion-label> 
+            </ion-label>
            </ion-row>
 
           <ion-item lines="none">
@@ -87,12 +86,12 @@
               <div *ngIf="f.password.errors.required">{{validationMsg.password}}</div>
             </div> -->
           </ion-item>
-        
+
 
           <ion-row class="instrLbl">
             <ion-label>
              Note
-            </ion-label> 
+            </ion-label>
            </ion-row>
 
           <ion-item lines="none">
@@ -114,11 +113,11 @@
           <ion-button class="signup-btn" style="margin: 14px;" fill="outline"  type="submit" (click)="navigateToLoginup()">Submit
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
           </ion-button>
-           
+
           <div class="ion-text-center">
            <ion-label>(or)</ion-label>
           </div>
-         
+
 
            <div class="ion-text-center">
             <ion-label>

@@ -1,0 +1,140 @@
+<ion-header mode="md" class="header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear">
+        <img src="assets/svg/back.svg" (click)="backBtn()" />
+      </ion-button>
+    </ion-buttons>
+    <ion-title> Pay now</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="pay-now-page">
+    <ion-card class="merct-name-card">
+      <ion-row>
+        <ion-col>
+          <ion-text class="black-small-text">ID: 2343</ion-text>
+        </ion-col>
+        <ion-col >
+          <ion-text class="float-right black-small-text">Status: <span class="add-text">add</span></ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div class="main-header"> Merchant Company Name</div>
+        <!--<ion-icon name="location-outline"></ion-icon>-->
+        <div class="sub-text"><ion-text><img src="../../../assets/svg/pin.svg"> Lorem ipsum dolor sit amet, consetetur</ion-text></div>
+      </ion-row>
+    </ion-card>
+    <ion-grid class="amt-input">
+      <ion-label >Amount</ion-label>
+      <ion-input></ion-input>
+    </ion-grid>
+    <ion-grid class="payment-details">
+      <ion-card class="payment-details-card">
+        <ion-row>
+          <ion-text class="pay-type-label">Payment Type Details</ion-text>
+        </ion-row>
+        <ion-row>
+          <ion-col size="9"><ion-label>Payment Type *</ion-label></ion-col>
+          <ion-col class="bycash-line">
+            <ion-text size="3" class="bycash">By Cash</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="pay-methods" *ngFor="let item of payMethod">
+            <div class="circle-bg">
+              <img class="center-img" src={{item.imgsrc}}>
+            </div>
+            <div class="pay-name">{{item.name}}</div>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col class="qr-code-box">
+            <img class="qr-img" src="../../../assets/images/qr-code-img.jpg">
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="scan-text">Scan to pay</ion-col>
+        </ion-row>
+        <ion-row class="link-row">
+          <ion-col size="8.5" class="link-text">
+            <ion-text class="link">Link: https://linkpay.com</ion-text>
+          </ion-col>
+          <ion-col size="3.5" class="click-here">
+              <ion-button class="click-btn" >Click Here</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-grid >
+              <ion-label>Receipt No. *</ion-label>
+              <ion-input></ion-input>
+            </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Invoice/Bill no *</ion-label>
+            <span class="add-icon">
+              <ion-icon name="add-circle-outline" class="plus-btn"></ion-icon>
+              Add More Invoice / Bill no
+            </span>
+            <ion-input></ion-input>
+          </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Amount Received *</ion-label>
+            <ion-input></ion-input>
+            <ion-text class="current-balance">Current Balance : 80000</ion-text>
+          </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Transaction Id / cheque no *</ion-label>
+            <ion-input></ion-input>
+          </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Taken / Paid by *</ion-label>
+            <ion-input></ion-input>
+          </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Due Date</ion-label>
+
+            <ion-input> <img class="calender-icon" src="../../../assets/svg/calendar.svg"></ion-input>
+
+          </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Location</ion-label>
+            <ion-input></ion-input>
+          </ion-grid>
+        </ion-row>
+        <ion-row>
+          <ion-grid>
+            <ion-label>Remarks</ion-label>
+            <ion-input></ion-input>
+          </ion-grid>
+        </ion-row>
+      </ion-card>
+      <ion-grid class="proof-content">
+        <div class="proof-header">Proof</div>
+        <div class="proof-img">
+          <img src="../../../assets/svg/google-docs .svg">
+          <ion-icon name="add-circle-outline" class="plus-btn"></ion-icon>
+        </div>
+      </ion-grid>
+      <ion-grid>
+        <div class="btn-wrapper">
+          <ion-button class="cancel-btn" >Cancel</ion-button>
+          <ion-button class="pay-btn" (click)="navToPayment()">Pay now</ion-button>
+        </div>
+      </ion-grid>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -38,7 +38,7 @@
     font-size: 17px;
 
   }
- 
+
   .leftPadding{
     padding-left: 4px;
   }
@@ -58,3 +58,12 @@
       color: white !important;
       font-size: 1.65rem;
     }
+
+  .btn-wrapper {
+    text-align: center;
+
+    .pay-btn{
+      --background: #158A03 !important;
+      --border-radius: 25px;
+    }
+  }

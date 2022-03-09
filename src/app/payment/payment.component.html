@@ -1,11 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-  
       <ion-button (click)="goToHome()">
         <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
       </ion-button>
-
     </ion-buttons>
     <ion-title style="color: white;">Payments</ion-title>
     <ion-buttons slot="end">
@@ -16,7 +14,7 @@
         <ion-icon name="funnel" class="navBtn-icon"></ion-icon>
       </ion-button>
 
-    
+
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -96,3 +94,9 @@
   </ion-list>
 
 </ion-content>
+<ion-footer >
+  <div class="btn-wrapper">
+    <ion-button class="pay-btn" (click)="navToPayment()">Pay now</ion-button>
+  </div>
+
+</ion-footer>

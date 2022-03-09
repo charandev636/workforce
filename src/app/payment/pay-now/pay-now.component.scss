@@ -1,0 +1,187 @@
+.pay-now-page{
+ margin: 0 8px;
+  ion-label{
+    text-align: left;
+    font: normal normal 600 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+  }
+
+  ion-input{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #DBD8D8;
+      height: 48px;
+      border-radius: 25px;
+      margin-top: 10px;
+  }
+  .header{
+    background-color: #CBB675;
+  }
+
+  .float-right{
+    float: right;
+  }
+
+  .black-small-text{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .merct-name-card{
+    padding: 10px;
+    margin-top: 18px;
+  }
+
+  .add-text{
+    color: #CBB675;
+    font-size: 12px;
+  }
+
+  .main-header{
+    text-align: left;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+
+  .sub-text{
+    text-align: left;
+    font: normal normal medium 12px/15px Montserrat;
+    letter-spacing: 0.12px;
+    color: #00000078;
+    opacity: 1;
+  }
+
+  .amt-input{
+    margin: 20px 10px 0 15px;
+  }
+
+  .payment-details{
+    .payment-details-card{
+      padding: 19px;
+      margin-top: 20px;
+      .pay-type-label{
+        font-size: 10px;
+        color: #CBB675;
+
+      }
+      .calender-icon{
+        position: absolute;
+        right: 10px;
+      }
+
+      .add-icon{
+        float: right;
+        color: #CBB675;
+        font-size: 9px;
+        margin-top:4px;
+      }
+      .current-balance{
+        color: #FF0000;
+        font-size: 9px;
+        float: right;
+      }
+      .bycash{
+        color: #000000;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .circle-bg {
+        height: 64px;
+        width: 64px;
+        background: #EAEAEA 0% 0% no-repeat padding-box;
+        border-radius: 47px;
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center
+      }
+
+      .bycash-line{
+        border-bottom: 1px solid black;
+      }
+
+      .pay-methods{
+        margin-top: 10px;
+      }
+
+      .qr-code-box{
+        display: flex;
+      }
+      .qr-img{
+        width: 164px;
+        height: 164px;
+        margin: auto
+      }
+      .scan-text{
+        text-align: center;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .pay-name{
+        color: #313131;
+        font-size: 14px;
+        margin-top: 6px;
+      }
+
+      .link-row{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px 0;
+
+        .link{
+          color: #000000;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .click-btn{
+          --background: #158A03 !important;
+          --border-radius: 26px;
+          height: 26px;
+          font-size: 11px;
+        }
+        .click-here{
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .proof-content{
+    padding: 20px;
+    .proof-header{
+      font-size: 19px;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 0.5;
+    }
+
+    .proof-img{
+      margin-top: 5px;
+    }
+
+    .plus-btn{
+      font-size: 44px;
+      padding-left: 10px;
+      color: #00000080;
+    }
+  }
+
+  .btn-wrapper {
+  text-align: center;
+
+  .pay-btn{
+    --background: #158A03 !important;
+    --border-radius: 25px;
+    height: 54px;
+  }
+  .cancel-btn{
+    --background: #FF0000 !important;
+    --border-radius: 25px;
+    height: 54px;
+  }
+}
+}

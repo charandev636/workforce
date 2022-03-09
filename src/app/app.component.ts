@@ -67,7 +67,7 @@ this.extraList = [
 
       //this.router.navigate(['bookorder']);
      // this.router.navigate(['Intro-sliders']);
-      this.nav.navigateRoot(['order-history-details']);
+      this.nav.navigateRoot(['pay-now']);
 
     } else {
       this.router.navigate(['Intro-sliders']);
