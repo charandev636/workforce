@@ -48,6 +48,8 @@ this.otherList = [
     url: 'home'},
     {name:'Exchange / Return Product', img:'../../assets/images/dashboard-icons/product-return.png',
     url: 'exchangereturns'},
+     {name:'Merchant', img:'../../assets/images/dashboard-icons/product-return.png',
+    url: 'merchant'},
 ];
 this.extraList = [
   {name:'Settings', img:'../../assets/images/dashboard-icons/admin.png',
@@ -67,7 +69,7 @@ this.extraList = [
 
       //this.router.navigate(['bookorder']);
      // this.router.navigate(['Intro-sliders']);
-      this.nav.navigateRoot(['pay-now']);
+      this.nav.navigateRoot(['merchant']);
 
     } else {
       this.router.navigate(['Intro-sliders']);

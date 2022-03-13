@@ -1,0 +1,57 @@
+.merchant-profile{
+  padding: 0 5px;
+  ion-label{
+    font-size: 14px;
+    color: #9A9A9A;
+  }
+
+  ion-input{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #DBD8D8;
+      height: 49px;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+
+  .sales-label{
+    font-size: 16px;
+    color: #9A9A9A;
+  }
+
+  .sales-name{
+    font-size: 16px;
+    color: #000000; padding-left: 10px;
+  }
+
+  .form-input{
+    margin-top: 10px;
+  }
+
+  .merchant-header{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 28px;
+    font-weight: 600;
+  }
+  .user-circle{
+    height: 133px;
+    width: 133px;
+    border-radius: 70px;
+    background-color: #D8D8D8;
+  }
+  .small-circle{
+    background-color: #CBB675;
+    width: 34px;
+    height: 34px;
+    border-radius: 60%;
+    float: right;
+    padding: 7%;
+  }
+
+
+  .activities{
+    margin-top: 20px;
+
+  }
+}
+

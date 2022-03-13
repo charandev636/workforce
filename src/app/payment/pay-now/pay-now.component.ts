@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pay-now',
@@ -11,8 +12,10 @@ export class PayNowComponent implements OnInit {
     {name:'By Online', imgsrc:'../../../assets/svg/online-payment.svg'},
     {name:'By Online', imgsrc:'../../../assets/svg/cheque.svg'},
   ];
-  constructor() { }
+  constructor(private nav: NavController) { }
 
   ngOnInit() {}
-
+  backBtn(){
+    this.nav.navigateRoot(['payment']);
+  }
 }
