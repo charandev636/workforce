@@ -8,9 +8,91 @@
 
     </ion-buttons>
     <ion-title style="color: white;">Reports</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="funnel" class="navBtn-icon"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <ion-col size="12">
+    <ion-row style="padding: 12px">
+      <ion-icon name="funnel" class="searchIcon"></ion-icon>
+     <ion-grid>
+       <ion-row style="font-size: small; padding-top: 0px; padding-left: 24px;">
+         <ion-label class="leftPadding">From</ion-label>
+         <ion-label class="leftPadding">12-09-20222</ion-label>
+        <ion-label class="leftPadding">to</ion-label>
+        <ion-label class="leftPadding">15-09-20222</ion-label>
+      </ion-row>
+    </ion-grid>
+     <ion-label style="color: red;">CLEAR</ion-label>
+    </ion-row>
+  </ion-col>
+  <ion-col size="12">
+    <ion-row class="heardeSearch" style="justify-content: center;">
+      <ion-label class="parchesLbl">Purchase in months</ion-label>
+    </ion-row>
+  </ion-col>
+  <ion-row style="margin: 0px 24px 0px 24px; font-size: small;">
+    <ion-label>
+      note: below is table information of confirmed orders amount only
+    </ion-label>
+  </ion-row>
+
+  <ion-card style="margin: 12px 24px 0px 24px;">
+    <ion-row class="heardeRow">
+<ion-col size="3">
+  <ion-label class="subHeader">
+Sl.no
+  </ion-label>
+</ion-col>
+<ion-col size="3">
+  <ion-label class="subHeader">
+Months
+  </ion-label>
+</ion-col>
+<ion-col size="3">
+  <ion-label class="subHeader">
+Orders No
+  </ion-label>
+</ion-col>
+<ion-col size="3">
+  <ion-label class="subHeader">
+Amount
+  </ion-label>
+</ion-col>
+    </ion-row>
+    
+    <ion-row *ngFor="let obj of reportsList" style="height: 60px;">
+      <ion-col size="3">
+        <ion-label class="subLbls">
+      1
+        </ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="subLbls">
+      jan 2022
+        </ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="subLbls">
+      12
+        </ion-label>
+      </ion-col>
+      <ion-col size="3">
+        <ion-label class="subLbls">
+      120
+        </ion-label>
+      </ion-col>
+      <hr class="hr">
+          </ion-row>
+         
+
+  </ion-card>
+
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button class="fab-btn" (click)="bookOrder()">

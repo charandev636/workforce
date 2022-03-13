@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AccountLedgerComponent } from './account-ledger/account-ledger.component';
 import { AddOrdersComponent } from './add-orders/add-orders.component';
 import { BookOrderComponent } from './book-order/book-order.component';
 import { ExchangeandreturnsComponent } from './exchangeandreturns/exchangeandreturns.component';
@@ -83,9 +84,13 @@ const routes: Routes = [
     path:'new-product-details',
     component:NewProductDetailsComponent
   },
-    {
-    path:'merchant',
-    component:MerchantComponent
+  {
+  path:'merchant',
+  component:MerchantComponent
+  },
+  {
+    path:'accountsledger',
+    component:AccountLedgerComponent
   }
 
 

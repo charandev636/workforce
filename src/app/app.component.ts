@@ -36,8 +36,8 @@ export class AppComponent  {
     url: 'orderhistory'},
     {name:'Product list', img:'../../assets/images/dashboard-icons/product-list.png',
     url: 'product'},
-    {name:'Account Ledger', img:'../../assets/images/dashboard-icons/Accountledger.png',
-    url: 'home'},
+    {name:'Accounts Ledger', img:'../../assets/images/dashboard-icons/Accountledger.png',
+    url: 'accountsledger'},
     {name:'Reports', img:'../../assets/images/dashboard-icons/report.png',
     url: 'reports'},
     {name:'Payment History', img:'../../assets/images/dashboard-icons/paymenthistory.png',
@@ -66,10 +66,9 @@ this.extraList = [
 
   checkLogs(){
     if (localStorage.getItem('introduction') === 'true') {
-
       //this.router.navigate(['bookorder']);
      // this.router.navigate(['Intro-sliders']);
-      this.nav.navigateRoot(['merchant']);
+      this.nav.navigateRoot(['reports']);
 
     } else {
       this.router.navigate(['Intro-sliders']);

@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
       url: 'product'
     },
     {
-      name: 'Account Ledger', img: '../../assets/images/dashboard-icons/Accountledger.png',
-      url: 'accountledger'
+      name: 'Accounts Ledger', img: '../../assets/images/dashboard-icons/Accountledger.png',
+      url: 'accountsledger'
     },
     {
       name: 'Reports', img: '../../assets/images/dashboard-icons/report.png',
