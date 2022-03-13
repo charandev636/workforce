@@ -9,6 +9,7 @@ import { NavController } from '@ionic/angular';
 })
 export class ReportsComponent implements OnInit {
 
+  reportsList = ['1','1','1','1','1','1','1','1','1','1'];
   constructor(private nav: NavController,private router: Router) { }
 
   ngOnInit() {}
