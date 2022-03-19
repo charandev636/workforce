@@ -98,6 +98,69 @@
   </ion-grid>
 
   <ion-grid class="activities">
-    <ion-row><ion-text>Activities</ion-text></ion-row>
+    <ion-row>
+      <ion-col class="text-center">
+        <ion-text class="activities-text">Activities</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <img src="../../assets/svg/filter.svg"/>
+      </ion-col>
+      <ion-col size="8" class="text-center">
+        <ion-text class="date-text">From 12/02/2022 to 15/02/2022</ion-text>
+      </ion-col>
+      <ion-col size="2">
+        <ion-text class="red-text"> Clear</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-grid class="orders">
+      <ion-row>
+        <ion-col class="text-center order-head">ORDERS</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="5" class="label-text">Total No. of Orders</ion-col>
+        <ion-col size="7"> 14</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="5" class="label-text"> Basic Amount : </ion-col>
+        <ion-col size="7"> 60,561.00</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="text-center last-order">(Last Order Date - 23/02/2022) 43 days Ago</ion-col>
+      </ion-row>
+      <hr>
+      <ion-row>
+        <ion-col class="text-center order-head">Receipt</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="5" class="label-text"> Collected Amount : </ion-col>
+        <ion-col size="7"> 60,000.00</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="text-center last-order">(Last receipt Date - 23/02/2022) 43 days Ago</ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="orders balance">
+        <ion-row>
+          <ion-col size="5" class="label-text">Any Discount</ion-col>
+          <ion-col size="7"> 0</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="5" class="label-text">GST Amount</ion-col>
+          <ion-col size="7"> 600000</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="5" class="label-text">Gross Amount</ion-col>
+          <ion-col size="7"> 600000</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="5" class="closing-text">Gross Amount</ion-col>
+            <ion-col size="7" class="closing-value"> 600000</ion-col>
+        </ion-row>
+
+    </ion-grid>
+
   </ion-grid>
 </ion-content>

@@ -52,6 +52,70 @@
   .activities{
     margin-top: 20px;
 
+    .activities-text{
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+    }
+    .date-text{
+      font-size: 12px;
+      color: #636363;
+      text-align: center;
+    }
+    .red-text{
+      color: #FF0000;
+      float: right;
+      padding-right: 10px;
+      font-size: 12px;
+    }
+
+    .orders{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #787878;
+      border-radius: 6px;
+
+      .order-head{
+        letter-spacing: 1.14px;
+        color: #C6AF67;
+        font-size: 16px;
+      }
+
+      .last-order{
+        letter-spacing: 0.64px;
+        color: #C6AF67;
+        font-size: 10px;
+      }
+
+      .label-text{
+        letter-spacing: 0.86px;
+        color: #8B8B8B;
+        font-size: 12px;
+      }
+
+      .value-text{
+        font-size: 12px;
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+
+    .balance{
+      margin-top:10px
+    }
+    .closing-text{
+      font: normal normal bold 12px/18px Poppins;
+      letter-spacing: 0.86px;
+      color: #787878;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .closing-value{
+      font-weight: 600;
+      color: #000000;
+      margin-top: 10px;
+
+    }
   }
 }
 
