@@ -16,6 +16,7 @@ import { PayNowComponent } from './payment/pay-now/pay-now.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductsComponent } from './products/products.component';
 import { ReportsComponent } from './reports/reports.component';
+import { SignComponent } from './sign/sign.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -91,6 +92,10 @@ const routes: Routes = [
   {
     path:'accountsledger',
     component:AccountLedgerComponent
+  },
+   {
+    path:'sign',
+    component:SignComponent
   }
 
 
