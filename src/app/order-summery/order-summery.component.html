@@ -1,0 +1,184 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+      <ion-button (click)="goToOrderHistory()">
+        <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-title style="color: white;">Order View</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content class="order-history-details-page">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8" class="left-bar">
+        <div>Merchant organization : Masqati private limited</div>
+        <div>owner name: Suman</div>
+      </ion-col>
+      <ion-col size="4" class="details-font">
+        <div>14/02/2022 12:00 pm</div>
+        <div class="pdf-icon"><ion-icon name="document"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="grid-header">
+        <ion-col size="1.5" >Id</ion-col>
+        <ion-col size="4.5">Particular</ion-col>
+         <ion-col size="3">Quantity</ion-col>
+        <ion-col size="3">
+         <ion-text class="float-right">
+          Total Price
+         </ion-text></ion-col>
+    </ion-row>
+    <ion-row class="grid-content">
+      <ion-col size="1.5" class="grey-text">2334</ion-col>
+      <ion-col size="4.5">
+        <div class="prod-name">Namkeen</div>
+        <div class="black-large-text">Makai Chudwa</div>
+        <div class="price-text">
+          <ion-text>WP: <span class="red-text">251.4</span></ion-text>
+          <ion-text class="float-right">MRP: <span class="red-text">21.4</span></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="3" >
+        <div class="prod-name">HSN:2343</div>
+        <div>1.00</div>
+        <div class="small-text">650ML</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="float-right bold-text">140,0000</div><br/><br/>
+        <div class="small-text float-right">250,00+10.2%</div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="grid-content">
+      <ion-col size="1.5" class="grey-text">2334</ion-col>
+      <ion-col size="4.5">
+        <div class="prod-name">Namkeen</div>
+        <div class="black-large-text">Makai Chudwa</div>
+        <div class="price-text">
+          <ion-text>WP: <span class="red-text">251.4</span></ion-text>
+          <ion-text class="float-right">MRP: <span class="red-text">21.4</span></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="3" >
+        <div class="prod-name">HSN:2343</div>
+        <div>1.00</div>
+        <div class="small-text">650ML</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="float-right bold-text">140,0000</div><br/><br/>
+        <div class="small-text float-right">250,00+10.2%</div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="grid-content">
+      <ion-col size="1.5" class="grey-text">2334</ion-col>
+      <ion-col size="4.5">
+        <div class="prod-name">Namkeen</div>
+        <div class="black-large-text">Makai Chudwa</div>
+        <div class="price-text">
+          <ion-text>WP: <span class="red-text">251.4</span></ion-text>
+          <ion-text class="float-right">MRP: <span class="red-text">21.4</span></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="3" >
+        <div class="prod-name">HSN:2343</div>
+        <div>1.00</div>
+        <div class="small-text">650ML</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="float-right bold-text">140,0000</div><br/><br/>
+        <div class="small-text float-right">250,00+10.2%</div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="grid-content">
+      <ion-col size="1.5" class="grey-text">2334</ion-col>
+      <ion-col size="4.5">
+        <div class="prod-name">Namkeen</div>
+        <div class="black-large-text">Makai Chudwa</div>
+        <div class="price-text">
+          <ion-text>WP: <span class="red-text">251.4</span></ion-text>
+          <ion-text class="float-right">MRP: <span class="red-text">21.4</span></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="3" >
+        <div class="prod-name">HSN:2343</div>
+        <div>1.00</div>
+        <div class="small-text">650ML</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="float-right bold-text">140,0000</div><br/><br/>
+        <div class="small-text float-right">250,00+10.2%</div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+<ion-grid class="footer-table" style="bottom: 80px;">
+  <ion-accordion-group class="accord-table">
+    <ion-accordion value="" toggle-icon="">
+      <ion-item slot="header">
+<div style="height: 20px; width: 20px;">
+    <img src="../../assets/svg/user-img.svg">
+</div>
+      </ion-item>
+      <ion-list slot="content" class="list-box">
+        <ion-grid class="table-content">
+          <ion-row class="row-border">
+            <ion-col>%</ion-col>
+            <ion-col>CGST</ion-col>
+            <ion-col>SGST</ion-col>
+            <ion-col>IGST</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>1</ion-col>
+            <ion-col>3</ion-col>
+            <ion-col>5</ion-col>
+            <ion-col>23</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>1</ion-col>
+            <ion-col>3</ion-col>
+            <ion-col>5</ion-col>
+            <ion-col>23</ion-col>
+          </ion-row>
+                  <ion-row>
+                    <ion-col><div class="black-font">Any Discount </div><div>5</div> </ion-col>
+                    <ion-col><div class="black-font">Other Charge</div> <div>5.00</div></ion-col>
+                    <ion-col><div class="black-font">GST Amount </div><div>50000</div></ion-col>
+                  </ion-row>
+        </ion-grid>
+      </ion-list>
+    </ion-accordion>
+  </ion-accordion-group>
+
+</ion-grid>
+
+</ion-content>
+
+<ion-footer class="footer" >
+  <ion-row class="footer-text">
+    <ion-col  size="3.4">
+      <div class="header">No.of Items</div>
+      <div class="value">5</div>
+    </ion-col>
+    <ion-col class="border-line" size="0.5">|</ion-col>
+    <ion-col size="3.8">
+      <div class="header">Total Quantity</div>
+      <div class="value">5.00</div>
+    </ion-col>
+    <ion-col size="0.5" class="border-line">|</ion-col>
+    <ion-col size="3">
+      <div class="header">Grand Total</div>
+      <div class="value">21233.0</div>
+    </ion-col>
+  </ion-row>
+
+<ion-row class="btmFooter">
+
+  <ion-button>
+    Generate Order
+  </ion-button>
+</ion-row>
+   
+</ion-footer>

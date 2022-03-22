@@ -9,7 +9,8 @@ import { NavController } from '@ionic/angular';
 })
 export class BookOrderComponent implements OnInit {
 
-  constructor(private nav: NavController) { }
+  constructor(private nav: NavController,
+    private router: Router,) { }
 bookingOrdersData : any;
 mainOrderData : any;
 count = 2;
@@ -19,9 +20,13 @@ count = 2;
     this.bookingOrdersData = ['1','2','3']
     this.mainOrderData = ['1','2'];
   }
+  viewSummery(){
+    this.router.navigate(['ordersummery']);
+  }
 
   
   goToHome(){
-    this.nav.navigateRoot(['home']);
+   
+    this.router.navigate(['home']);
   }
 }

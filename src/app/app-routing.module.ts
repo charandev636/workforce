@@ -12,6 +12,7 @@ import { NewProductDetailsComponent } from './new-product/new-product-details/ne
 import { NewProductComponent } from './new-product/new-product.component';
 import { OrderHistoryDetailsComponent } from './order-history/order-history-details/order-history-details.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { OrderSummeryComponent } from './order-summery/order-summery.component';
 import { PayNowComponent } from './payment/pay-now/pay-now.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductsComponent } from './products/products.component';
@@ -93,9 +94,13 @@ const routes: Routes = [
     path:'accountsledger',
     component:AccountLedgerComponent
   },
-   {
+  {
     path:'sign',
     component:SignComponent
+  },
+  {
+    path:'ordersummery',
+    component:OrderSummeryComponent
   }
 
 
