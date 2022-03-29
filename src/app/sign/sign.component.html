@@ -1,5 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goback()">
+        <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="color: white;">Sign</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div>
+  <div class="sign-pad">
     <canvas #canvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)"></canvas>
     <ion-grid>
       <ion-row>

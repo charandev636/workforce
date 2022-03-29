@@ -9,6 +9,7 @@ import { NavController } from '@ionic/angular';
 export class OrderSummeryComponent implements OnInit {
 
   list = ['1','2','3','4'];
+  isSignPage: boolean;
   constructor(private nav: NavController) { }
 
   ngOnInit() {}
@@ -16,4 +17,8 @@ export class OrderSummeryComponent implements OnInit {
     this.nav.navigateRoot(['home']);
   }
 
+  showSignModal(){
+   // this.isSignPage = !this.isSignPage;
+   this.nav.navigateRoot(['sign']);
+  }
 }

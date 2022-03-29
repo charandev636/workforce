@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-
-      <ion-button (click)="goToOrderHistory()">
-        <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
-      </ion-button>
-
-    </ion-buttons>
-    <ion-title style="color: white;">Order View</ion-title>
-
+    <ion-row>
+      <ion-col size="10">
+        <ion-buttons slot="start">
+          <ion-button (click)="goToOrderHistory()">
+            <ion-icon name="arrow-back" class="navBtn-icon"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title style="color: white;">Order View</ion-title>
+      </ion-col>
+      <ion-col size="2" class="floar-right">
+          <ion-icon  class="sign-img" (click)="showSignModal()" name="create-outline"></ion-icon>
+      </ion-col>
+  </ion-row>
   </ion-toolbar>
 </ion-header>
 <ion-content class="order-history-details-page">
@@ -180,5 +184,6 @@
     Generate Order
   </ion-button>
 </ion-row>
-   
+
 </ion-footer>
+

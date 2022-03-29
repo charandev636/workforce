@@ -1,7 +1,7 @@
 
 .order-history-details-page{
     --background: #FAFAFA;
-  
+
     .details-font{
       font-size: 12px;
     }
@@ -12,7 +12,7 @@
     .left-bar{
       padding-left: 10px;
     }
-  
+
     .grid-header{
       background-color: #ffff;
       font-weight: 600;
@@ -50,7 +50,7 @@
           color: rgb(41, 38, 38);
         }
     }
-  
+
     .footer-table{
       position:fixed;
       bottom:38px;
@@ -59,7 +59,7 @@
       .row-border{
         border: 1px solid grey;
       }
-  
+
       .black-font{
         color: black;
         font-size: 14px;
@@ -71,7 +71,7 @@
       .table-content{
         padding: 0;
       }
-  
+
     ion-row:first-child {
       background-color:  #ffff;
       font-weight: bold;
@@ -80,22 +80,22 @@
     ion-row{
        border: 1px solid grey;
     }
-  
-  
-  
+
+
+
     ion-row:last-child {
       border-bottom: 1px solid grey;
     }
-  
+
   }
-  
+
   }
-  
+
   .footer{
     background-color:#CBB675 ;
     .footer-text{
       text-align: center;
-  
+
       .header{
         font-size: 14px;
         font-weight: 600;
@@ -104,7 +104,7 @@
         font-weight: 400;
       }
     }
-  
+
     .border-line{
       color: black;
       font-size: 29px;
@@ -129,7 +129,16 @@
      }
   }
 
-  
-  
-  
-  
+
+ .sign-img{
+   font-size: 22px;
+   color: #FAFAFA;
+ }
+
+ canvas {
+  display: block;
+  border: 1px solid rgb(187, 178, 178);
+  background-color: var(--ion-color-success);
+}
+
+

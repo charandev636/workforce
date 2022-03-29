@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NavController } from '@ionic/angular';
 import SignaturePad from 'signature_pad';
 
 @Component({
@@ -11,12 +12,15 @@ export class SignComponent implements OnInit  {
   signaturePad: SignaturePad;
   signatureImg: string;
 
-  constructor() { }
+  constructor(private nav: NavController) { }
 
   ngOnInit(): void {
 
   }
 
+  goback(){
+    this.nav.navigateRoot(['ordersummery']);
+  }
   // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
   ngAfterViewInit() {
     this.signaturePad = new SignaturePad(this.canvasEl.nativeElement);

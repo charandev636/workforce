@@ -67,8 +67,8 @@ this.extraList = [
   checkLogs(){
     if (localStorage.getItem('introduction') === 'true') {
       //this.router.navigate(['bookorder']);
-      //this.router.navigate(['Intro-sliders']);
-      this.nav.navigateRoot(['ordersummery']);
+      this.router.navigate(['Intro-sliders']);
+     // this.nav.navigateRoot(['ordersummery']);
 
     } else {
       this.router.navigate(['Intro-sliders']);
